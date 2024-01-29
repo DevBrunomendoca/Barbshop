@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const ContainerAbout = styled.section`
-  height: 100vh;
+  min-height: 90vh;
   max-width: 1400px;
   margin: 0 auto;
   padding: 6rem 0;
