@@ -5,7 +5,7 @@ export function Header() {
   return (
     <ContainerHeader>
       <nav>
-        <h3>Barber Shop</h3>
+        <h3>Navalha Pub</h3>
         <ul>
           <Link to="/">Inicio</Link>
           <Link to="/about">Sobre</Link>

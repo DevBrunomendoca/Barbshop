@@ -1,8 +1,13 @@
-import { RouterProvider } from 'react-router-dom'
-import router from '../../../router'
+import { Home } from '../Home/Home'
+import SectionAbout from '../../components/SectionAbout/SectionAbout'
 
 export function Main() {
   
-  return <RouterProvider router={router}/>
+  return (
+    <>
+      <Home />
+      <SectionAbout />
+    </>
+  )
   
 }

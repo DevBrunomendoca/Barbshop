@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home } from "./src/pages/Home/Home";
 import { About } from "./src/pages/About/About";
 import RootLayout from "./src/pages/RootLayout/RootLayout";
 import Team from "./src/pages/Team/Team";
@@ -7,6 +6,7 @@ import Pricing from "./src/pages/Pricing/Pricing";
 import Gallery from "./src/pages/Gallery/Gallery";
 import Testmonial from "./src/pages/Testmonial/Testimonial";
 import Contact from "./src/pages/Contacts/Contacts";
+import { Main } from "./src/pages/Main/Main";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
       index: true,
-      element: <Home />
+      element: <Main />
     },
     {
       path: "about",
