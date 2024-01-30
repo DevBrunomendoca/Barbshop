@@ -4,7 +4,7 @@ export const ContainerAbout = styled.section`
   min-height: 90vh;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 6rem 0;
+  padding: 6rem 1rem 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +40,8 @@ export const ContentCardAbout = styled.div`
   
   p:not(:first-child) {
     opacity: .8;
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 1rem;
     max-width: 220px;
   }
 `

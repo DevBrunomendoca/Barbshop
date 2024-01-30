@@ -7,7 +7,7 @@ export const ContainerTeam = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0 5rem;
+  padding: 4rem 1rem;
 ` 
 export const ContainerCardTeam = styled.div`
   margin-top: 3rem;
@@ -20,7 +20,5 @@ export const ContainerCardTeam = styled.div`
   img {
     width: 100%;
   }
-
-
 
 `

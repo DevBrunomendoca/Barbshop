@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const ContainerPricing = styled.section`
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1rem 0 5rem ;
+  padding: 4rem 1rem ;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -31,6 +31,12 @@ flex-direction: column;
 align-items: start;
 justify-content: start;
 height: 100%;
+box-shadow: rgba(134, 134, 134, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+tr:first-child{
+  background-color: var(--third-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 tr {
   width: 100%;
   height: 100%;
@@ -44,5 +50,8 @@ th, td {
   font-family: "Poppins";
   font-size: 1.1rem;
   text-align: center;
+}
+th {
+  color: var(--primary-color);
 }
 `

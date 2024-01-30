@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const ContainerHeader = styled.header`
   background-color: var(--primary-color);
-  padding: 2rem;
+  padding: 2rem 1rem;
   nav {
     display: flex;
     justify-content: space-between;
