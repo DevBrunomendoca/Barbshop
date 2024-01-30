@@ -17,5 +17,7 @@ html {
 body {
   background-color: #1d1d1d;
 }
-
+.active { 
+  border-bottom: 3px solid var(--third-color);
+}
 `
