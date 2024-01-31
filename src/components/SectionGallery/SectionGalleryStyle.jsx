@@ -21,6 +21,14 @@ margin-top: 6rem;
     padding: 1rem;
     cursor: pointer;
   }
+  img {
+    transform: scale(1);
+    transition: ease-in-out .5s;
+    &:hover {
+      transform: scale(1.05);
+    }
+    
+  }
   /* div:nth-child(1) {
     transform: rotateZ(-4deg);
   }

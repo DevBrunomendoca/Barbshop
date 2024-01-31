@@ -46,7 +46,7 @@ export default function SectionTestimonial() {
           spaceBetween={30}
           centeredSlides={false}
           autoplay={{
-            delay: 4500,
+            delay: 3500,
             disableOnInteraction: false,
           }}
           loop={true}
