@@ -22,12 +22,20 @@ export const ContentHomeText = styled.div`
 margin-top: 100px;
 display: flex;
 flex-direction: column;
-align-items: center;
+align-items: start;
 gap: 1rem;
 width: 100%;
+button {
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  border: 2px solid var(--third-color);
+  &:hover {
+    background-color: transparent;
+    color: var(--third-color);
+  }
+}
 `
 export const ContentHomeImg = styled.div`
-//background-color: blue;
 display: flex;
 align-items: center;
 position: relative;

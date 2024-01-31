@@ -14,7 +14,7 @@ export function Main() {
       <SectionTeam />
       <Pricing />
       <SectionGallery />
-      {/* <SectionTestimonial /> */}
+      <SectionTestimonial />
     </>
   )
   

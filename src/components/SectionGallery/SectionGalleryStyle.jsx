@@ -21,7 +21,7 @@ margin-top: 6rem;
     padding: 1rem;
     cursor: pointer;
   }
-  div:nth-child(1) {
+  /* div:nth-child(1) {
     transform: rotateZ(-4deg);
   }
   div:nth-child(2) {
@@ -37,8 +37,8 @@ margin-top: 6rem;
   }
   div:nth-child(6) {
     transform: rotateZ(4deg);
-  }
-  /* div:nth-child(1) {
+  } */
+  div:nth-child(1) {
     transform: rotateZ(-7deg);
   }
   div:nth-child(2) {
@@ -55,7 +55,7 @@ margin-top: 6rem;
   }
   div:nth-child(6) {
     transform: rotateZ(-7deg);
-  } */
+  }
 `
 
 export const CardImgGallery = styled.div`

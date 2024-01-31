@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const ContainerHeader = styled.header`
   background-color: var(--primary-color);
   padding: 2rem 1rem;
+  
   nav {
     display: flex;
     justify-content: space-between;
@@ -17,7 +18,7 @@ export const ContainerHeader = styled.header`
   }
   ul{
     display: flex;
-    gap: 2rem;
+    gap: .8rem;
   }
   
   a{
@@ -25,5 +26,6 @@ export const ContainerHeader = styled.header`
     text-decoration:none;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.2rem;
+    padding: 0 .6rem;
   }
 `
