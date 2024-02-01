@@ -3,13 +3,13 @@ import ImageComponent from "../ImageComponent"
 import SocialMedia from "../SocialMedia"
 import { ContainerCardTeam, ContentCardTeam, SocialMedias, ContentButton } from "./CardTeamStyle"
 
-export default function CardTeam({ imageId, name }) {
+export default function CardTeam({ imageId, name, src }) {
   return (
     <ContainerCardTeam>
       <ContentCardTeam>
 
-
-        <ImageComponent imageId={imageId} />
+        <img src={src} alt="" />
+        {/* <ImageComponent imageId={imageId} /> */}
         <h3>{name}</h3>
         <SocialMedias>
           <SocialMedia img="/icone-wtpp.png" alt="icone whatsapp" href="#" />

@@ -16,7 +16,8 @@ Há uma década, a Barbearia Navalha Pub surgiu como uma visão concreta de eleg
       </ContentText>
 
       <ContentImg>
-        <ImageComponent imageId="4"/>
+        <img src="imagem-cortes4.jpg" alt="" />
+        {/* <ImageComponent imageId="4"/> */}
         <ContentCardAbout>
           <Paragraph textParagraph="Bruno Mendonça"/>
           <Paragraph textParagraph="Proprietário e fundador da Barbearia Navalha Pub desde 2014."/>

@@ -10,10 +10,10 @@ export default function SectionTeam() {
       <Caption textCaption="Nosso time"/>
       <SecondCaption textSecondCaption="Nossa equipe de profissionais" />
       <ContainerCardTeam>
-        <CardTeam imageId="5" name="Bruno Mendonça"/>
-        <CardTeam imageId="6" name="Matheus Carvalho"/>
-        <CardTeam imageId="7" name="Pedro Henrique"/>
-        <CardTeam imageId="8" name="Lucas Teodoro"/>
+        <CardTeam src='/foto-barbeiro-perfil1.jpg' name="Bruno Mendonça"/>
+        <CardTeam src='/foto-barbeiro-perfil2.jpg'  name="Matheus Carvalho"/>
+        <CardTeam src='/foto-barbeiro-perfil3.jpg'  name="Pedro Henrique"/>
+        <CardTeam src='/foto-barbeiro-perfil4.jpg'  name="Lucas Teodoro"/>
       </ContainerCardTeam>
     </ContainerTeam>
   )
