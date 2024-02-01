@@ -4,6 +4,8 @@ export const ContainerContact = styled.section`
 
 padding: 4rem 1rem;
 background: linear-gradient(90deg, rgba(29,29,29,0.9528186274509804) 0%, rgba(29,29,29,0.5438550420168067) 25%, rgba(29,29,29,0.5046393557422969) 75%, rgba(29,29,29,0.9612219887955182) 100%), url('/banner-contact.jpg') no-repeat center;
+background-size: cover;
+
 `
 export const ContentContact = styled.div`
   max-width: 1400px;
@@ -13,6 +15,7 @@ export const ContentContact = styled.div`
   align-items: start;
   gap: 2rem;
 h2{
+  font-size: 2.2rem;
   color: var(--third-color);
 }
 

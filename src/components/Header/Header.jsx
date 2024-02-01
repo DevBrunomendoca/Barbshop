@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { ContainerHeader } from "./HeaderStyle"
+import Logo from "../Logo";
 
 export function Header() {
   const { pathname } = useLocation()
@@ -7,7 +8,7 @@ export function Header() {
   return (
     <ContainerHeader>
       <nav>
-        <h3>Navalha Pub</h3>
+        <Logo />
         <ul>
           <Link to="/"
             className={`tab ${pathname === "/" ? "active" : ""}`}>Inicio</Link>

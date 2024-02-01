@@ -7,7 +7,7 @@ const ImageComponent = ({ imageId }) => {
   useEffect(() => {
     async function fetchImage() {
       try {
-        const response = await axios.get(`http://localhost:3000/pictures/${imageId}`);
+        const response = await axios.get(`http://localhost:4000/pictures/${imageId}`);
         const data = response.data;
         setImage(data);
       } catch (error) {
@@ -24,7 +24,7 @@ const ImageComponent = ({ imageId }) => {
 
   return (
     <>
-      <img src={`http://localhost:4000/uploads/${image._id}_${image.name}.jpg`} alt={image.name} />
+      <img src={`http://localhost:3000/uploads/${image._id}_${image.name}.jpg`} alt={image.name} />
     </>
   );
 };
