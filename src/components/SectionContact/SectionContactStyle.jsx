@@ -18,7 +18,9 @@ h2{
   font-size: 2.2rem;
   color: var(--third-color);
 }
-
+@media (max-width:800px) {
+  flex-direction: column;
+}
 
   `
 

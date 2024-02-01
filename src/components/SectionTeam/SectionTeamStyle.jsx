@@ -8,11 +8,12 @@ export const ContainerTeam = styled.section`
   flex-direction: column;
   align-items: center;
   padding: 4rem 1rem;
+  h2{ 
+    text-align: center;
+  }
 ` 
 export const ContainerCardTeam = styled.div`
   margin-top: 3rem;
-  /* display: flex;
-  justify-content: space-between; */
   gap: 3rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -20,5 +21,10 @@ export const ContainerCardTeam = styled.div`
   img {
     width: 100%;
   }
-
+  @media (max-width: 1050px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `

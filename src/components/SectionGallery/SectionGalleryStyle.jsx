@@ -17,6 +17,7 @@ margin-top: 6rem;
   justify-content: center;
   place-items: center;
   gap: 4.5rem;
+
   div{
     padding: 1rem;
     cursor: pointer;
@@ -71,5 +72,13 @@ export const CardImgGallery = styled.div`
   //height: 400px;
   width: 100%;
   background-color: var(--primary-color);
-
+  img {
+    width: 100%;
+  }
+@media (max-width:500px) {
+  width: 80%;
+} 
+@media (max-width:355px) {
+  width: 60%;
+} 
 `

@@ -7,6 +7,11 @@ export const ContainerTestimonial = styled.section`
   align-items: start;
   gap: 1rem;
   padding: 4rem 1rem;
+  @media (max-width:900px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+  }
 `
 
 export const ContentTextTestimonial = styled.div`
@@ -18,13 +23,20 @@ p {
   max-width: 400px;
   margin-top: 1rem;
 }
+@media (max-width:900px) {
+  p {
+  max-width: none;
+}
+}
 `
 
 export const ContentCardTestimonial = styled.div`
   display: flex;
   align-items: center;
   width: 65%;
-
+@media (max-width: 900px) {
+  width: 100%;
+}
 `
 export const CardTestimonialStyled = styled.div`
   display: flex;

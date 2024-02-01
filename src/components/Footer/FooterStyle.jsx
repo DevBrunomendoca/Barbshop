@@ -16,6 +16,7 @@ margin: 0 auto;
   align-items: start;
   gap: 3rem;
   padding: 4rem 1rem;
+  flex-wrap: wrap;
   h2 {
     font-size: 2.5rem;
   color: var(--third-color);
@@ -28,7 +29,12 @@ export const Navalha = styled.img`
     bottom: 34px;
     left: 10%;
     width: 445px; 
-  
+    @media (max-width:750px) {
+      width: 345px; 
+  }
+    @media (max-width:750px) {
+      width: 250px; 
+  }
 `
 
 export const ContenLocation = styled.div`

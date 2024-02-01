@@ -12,8 +12,10 @@ export const GlobalStyle =  createGlobalStyle`
   --third-color: #FFFFFF;
 }
 html {
-  font-size: 62,5%;
-
+  font-size: 95%;
+@media (max-width:750px) {
+  font-size: 80.5%;
+}
 }
 
 body {

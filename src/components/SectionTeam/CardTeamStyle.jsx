@@ -5,8 +5,6 @@ export const ContainerCardTeam = styled.div`
 
 `
 export const ContentCardTeam = styled.div`
-
-  //height: 400px;
   background-color: var(--primary-color);
   padding-bottom: 1rem;
 
@@ -28,21 +26,15 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 1rem;
-
-
 `
 export const ContentButton = styled.div`
 
 
 button {
-
-
   background-color: var(--third-color);
   color: var(--primary-color);
   width: 100%;
   margin-top: .5rem;
 }
-
-
 `
 

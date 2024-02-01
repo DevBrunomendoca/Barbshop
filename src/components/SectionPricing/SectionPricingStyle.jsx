@@ -7,6 +7,10 @@ export const ContainerPricing = styled.section`
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  @media (max-width: 1250px) {
+    flex-direction: column ;
+    text-align: center;
+  }
 `
 
 export const ContentText = styled.div`
@@ -15,12 +19,19 @@ export const ContentText = styled.div`
   gap: 1.3rem;
   align-items: start;
   max-width: 500px;
+  @media (max-width: 1250px) {
+    max-width: none;
+    align-items: center;
+  }
 `
 
 export const ContentTable = styled.div`
   display: flex;
   gap: 1.5rem;
   width: 100%;
+  @media (max-width:750px) {
+    flex-direction: column;
+  }
 `
 export const CardTable = styled.table`
 

@@ -10,22 +10,24 @@ import Paragraph from '../Paragraph'
 //import { CardTestimonialStyled } from "./CardTestimonialStyle";
 
 export default function SectionTestimonial() {
-  /*const [sliderPreview, setSliderPreview] = useState(3)
+  const [sliderPreview, setSliderPreview] = useState(2)
 
   useEffect(() => {
     function handleResize() {
-      window.innerWidth < 950
+      window.innerWidth <= 735
+      ? setSliderPreview(1)
+      : window.innerWidth <= 900
+        ? setSliderPreview(2)
+        : window.innerWidth <= 1050
         ? setSliderPreview(1)
-        : window.innerWidth <= 1250
-          ? setSliderPreview(2)
-          : setSliderPreview(3)
+        : setSliderPreview(2)
     }
     handleResize()
     window.addEventListener('resize', handleResize)
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-  }, [])*/
+  }, [])
   const data = [
     { id: '1', avatar: '/foto-perfil-cliente1.jpg', name: 'Andre Luiz', comment: "Excelente experiência na barbearia! Atendimento impecável, ambiente agradável e corte perfeito. Recomendo a todos!" },
     { id: '2', avatar: '/foto-perfil-cliente2.jpg', name: 'Michelle Araujo', comment: "Profissionais incríveis, ambiente descontraído. Meu corte ficou exatamente como eu queria. Voltarei com certeza!" },
@@ -42,7 +44,7 @@ export default function SectionTestimonial() {
       </ContentTextTestimonial>
       <ContentCardTestimonial>
         <Swiper
-          slidesPerView={2}
+          slidesPerView={sliderPreview}
           spaceBetween={30}
           centeredSlides={false}
           autoplay={{
