@@ -7,7 +7,7 @@ ${({sideBar}) => sideBar && css`
   background-color: var(--second-color);
   position: absolute;
   height: 350px;
-  top: 101px;
+  top: 85px;
   left: 0;
   width: 100%;
   animation: showSideBar .3s;
