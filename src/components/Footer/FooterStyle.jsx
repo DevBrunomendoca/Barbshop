@@ -15,7 +15,7 @@ margin: 0 auto;
   justify-content: space-between;
   align-items: start;
   gap: 3rem;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   h2 {
     font-size: 2.5rem;
   color: var(--third-color);
@@ -60,20 +60,9 @@ h3 {
   }
 `
 
-export const ContentPages = styled.ul`
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
-  a{
-    color: var(--third-color);
-    text-decoration:none;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.3rem;
-    padding: 0 .6rem;
-  }
 
 
-`
+
 
 export const ContentEmail = styled.div`
 display: flex;

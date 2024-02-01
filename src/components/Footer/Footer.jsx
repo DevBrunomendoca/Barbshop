@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom'
 import Logo from '../Logo'
 import Paragraph from '../Paragraph'
 import SecondCaption from '../SecondCaption'
-import { ContainerFooter, ContentFooterContact, ContenLocation, ContentPages, ContentEmail, Form, Navalha,ContentCopyright } from './FooterStyle'
+import { ContainerFooter, ContentFooterContact, ContenLocation,  ContentEmail, Form, Navalha,ContentCopyright } from './FooterStyle'
 import Button from '../Button'
+import ListItem from '../ListItem'
 
 const Footer = () => {
   return (
@@ -28,15 +29,10 @@ const Footer = () => {
             <Button textButton="Enviar!"/>
           </Form>
         </ContentEmail>
-        <ContentPages>
-          <Link to="/">Inicio</Link>
-          <Link to="/about" >Sobre</Link>
-          <Link to="/team">Time</Link>
-          <Link to="/pricing">Preços</Link>
-          {/* <Link to="/gallery">Galeria</Link> */}
-          <Link to="/testimonials">Comentários</Link>
-          <Link to="/contacts" >Contato</Link>
-        </ContentPages>
+        {/* <ContentPages>
+          <ListItem />
+        </ContentPages> */}
+        <ListItem />
 
       </ContentFooterContact>
       <ContentCopyright>

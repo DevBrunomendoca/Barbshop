@@ -8,6 +8,12 @@ export const ContainerAbout = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap : 2rem ;
+  @media (max-width: 1050px) {
+    flex-direction : column;
+    text-align: start;
+    //justify-content: start;
+  }
 `
 export const ContentText = styled.div`
 
@@ -16,17 +22,33 @@ export const ContentText = styled.div`
   align-items: start;
   gap: 2rem;
   max-width: 700px;
+  width: 60%;
   p {
     max-width: 600px;
   }
+  @media (max-width: 1050px) {
+    align-items: start;
+    width: 100%;
+  }
+  p {
+    max-width: none;
+  } 
 `
 export const ContentImg = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: 40%;
+
   img {
-    height: 760px;
+    width: 100%;
   }
+  @media (max-width: 1050px) {
+    align-items: start;
+    width: 100%;
+    max-width: 600px;
+  } 
+
 `
 
 export const ContentCardAbout = styled.div`
@@ -43,5 +65,8 @@ export const ContentCardAbout = styled.div`
     font-weight: 300;
     font-size: 1rem;
     max-width: 220px;
+  }
+  @media (max-width: 1050px){
+    margin: -100px 0 0 0px;
   }
 `

@@ -17,6 +17,7 @@ export const ContentHome = styled.div`
   align-items: center;
   gap: 2rem;
   margin-top: -200px;
+  
 `
 export const ContentHomeText = styled.div`
 margin-top: 100px;
@@ -34,6 +35,12 @@ button {
     color: var(--third-color);
   }
 }
+@media (max-width:1050px) {
+    align-items: center;
+    p, h1 {
+  text-align: center;
+  }
+}
 `
 export const ContentHomeImg = styled.div`
 display: flex;
@@ -42,11 +49,20 @@ position: relative;
 width: 100%;
 img {
   border-radius: 10px;
+  //width:100%;
 }
 img:first-child {
   position: relative;
   top: 80px;
   left: 40px;
 }
-
+@media (max-width: 1250px) {
+  img {
+    width: 50%;
+  }
+}
+@media (max-width: 1050px) {
+  display: none;
+}
 `
+

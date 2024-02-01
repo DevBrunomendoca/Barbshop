@@ -1,15 +1,22 @@
 import { Link, useLocation } from "react-router-dom";
-import { ContainerHeader } from "./HeaderStyle"
+import { ContainerHeader,ContentListItemHeader, Navigation } from "./HeaderStyle"
 import Logo from "../Logo";
+import { useState } from "react";
+import IconSideBar from "./IconSideBar";
+import SideBar from "./SideBar";
+
 
 export function Header() {
   const { pathname } = useLocation()
 
+  const [sideBar, setSideBar] = useState(false)
+  const toggleSideBar = () =>  setSideBar(!sideBar)
+
   return (
     <ContainerHeader>
-      <nav>
+      <Navigation>
         <Logo />
-        <ul>
+        <ContentListItemHeader>
           <Link to="/"
             className={`tab ${pathname === "/" ? "active" : ""}`}>Inicio</Link>
           <Link to="/about"
@@ -18,13 +25,14 @@ export function Header() {
             className={`tab ${pathname === "/team" ? "active" : ""}`} >Time</Link>
           <Link to="/pricing"
             className={`tab ${pathname === "/pricing" ? "active" : ""}`} >Preços</Link>
-          {/* <Link to="/gallery">Galeria</Link> */}
           <Link to="/testimonials"
             className={`tab ${pathname === "/testimonials" ? "active" : ""}`} >Comentários</Link>
           <Link to="/contacts"
             className={`tab ${pathname === "/contacts" ? "active" : ""}`} >Contato</Link>
-        </ul>
-      </nav>
+        </ContentListItemHeader>
+        <IconSideBar sideBar={sideBar} onclick={() => toggleSideBar()}/>
+      </Navigation>
+      {SideBar && <SideBar sideBar={sideBar} setSideBar={setSideBar}/>}
     </ContainerHeader>
   )
 }
