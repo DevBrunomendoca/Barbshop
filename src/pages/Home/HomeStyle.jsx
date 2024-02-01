@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const ContainerHome = styled.section`
 
   min-height: 90vh;
-  background: linear-gradient(132deg, rgba(90,106,140, .8) 7%, rgba(90,106,140, .8) 99%),  url("banner-principal.jpg") center no-repeat;
+  background: linear-gradient(90deg, rgba(29,29,29,0.9528186274509804) 0%, rgba(29,29,29,0.5438550420168067) 25%, rgba(29,29,29,0.5046393557422969) 75%, rgba(29,29,29,0.9612219887955182) 100%), url('/banner-principal.jpg') no-repeat center;
+
+  //background: linear-gradient(132deg, rgba(90,106,140, .8) 7%, rgba(90,106,140, .8) 99%),  url("banner-principal.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
