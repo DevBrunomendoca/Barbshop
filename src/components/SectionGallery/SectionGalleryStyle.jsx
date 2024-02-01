@@ -65,6 +65,51 @@ margin-top: 6rem;
   div:nth-child(6) {
     transform: rotateZ(-7deg);
   }
+
+  @media (max-width:1402px) {
+    gap: 2rem;
+    div:nth-child(1) {
+    transform: rotateZ(0);
+  }
+  div:nth-child(2) {
+    margin-top: 0px;
+  }
+  div:nth-child(3) {
+    transform: rotateZ(0);
+  }
+  div:nth-child(4) {
+    transform: rotateZ(0);
+  }
+  div:nth-child(5) {
+    margin-top: 0;
+  }
+  div:nth-child(6) {
+    transform: rotateZ(0);
+  }
+  }
+
+
+  /* @media (max-width:930px) {
+    gap: 2rem;
+    div:nth-child(1) {
+    transform: rotateZ(0);
+  }
+  div:nth-child(2) {
+    margin-top: 0px;
+  }
+  div:nth-child(3) {
+    transform: rotateZ(0);
+  }
+  div:nth-child(4) {
+    transform: rotateZ(0);
+  }
+  div:nth-child(5) {
+    margin-top: 0;
+  }
+  div:nth-child(6) {
+    transform: rotateZ(0);
+  }
+  } */
 `
 
 export const CardImgGallery = styled.div`
