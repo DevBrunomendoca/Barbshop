@@ -6,7 +6,8 @@ export const ButtonMain = styled.button`
   background-color: var(--primary-color);
   border: none;
   color: var(--third-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   color: var(--third-color);
   font-size: 1.1rem;
   cursor: pointer;

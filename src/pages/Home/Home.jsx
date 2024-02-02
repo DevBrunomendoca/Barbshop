@@ -15,7 +15,7 @@ export function Home() {
         <ContentHomeText>
           <Caption textCaption="Bem-vindo à Navalha Pub"/>
           <Title textTitle="Barbearia Exclusiva: Estilo e Elegância em Cada Corte." />
-          <Paragraph textParagraph="Oferecemos cortes de alta performance para homens que buscam excelência em sua aparência. Com profissionais habilidosos e experientes, garantimos resultados que superam expectativas. Descubra a arte da barbearia em um ambiente acolhedor, onde a qualidade é a nossa prioridade."/>
+          <Paragraph textParagraph="Descubra a arte da barbearia em um ambiente acolhedor, onde a qualidade é a nossa prioridade."/>
           <Button textButton= 'Agendar horário' />
         </ContentHomeText>
       </ContentHome>

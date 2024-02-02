@@ -10,7 +10,7 @@ export default function SectionAbout() {
       <ContentText>
         <SecondCaption textSecondCaption="Há mais de uma Década de Excelência: Profissionais Certificados na Arte da Barbearia, Aqui Desde o Início" />
         <Paragraph textParagraph="
-Há uma década, a Barbearia Navalha Pub surgiu como uma visão concreta de elegância e maestria no mundo dos cortes masculinos. Fundada por barbeiros certificados que compartilhavam uma paixão intrínseca pela arte da barbearia, nossa jornada começou com o compromisso de proporcionar serviços de qualidade excepcional." />
+Há uma década, a Barbearia Navalha Pub surgiu como uma visão concreta de elegância e maestria no mundo dos cortes masculinos. " />
       <Paragraph textParagraph="Inspirados pela tradição e determinados a criar um espaço onde os clientes pudessem experimentar mais do que um simples corte de cabelo."/>
       <Button textButton="Saiba mais"/>
       </ContentText>
