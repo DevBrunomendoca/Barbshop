@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ContainerFooter = styled.footer`
   //height: 400px; 
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   
   position: relative;
   
@@ -65,15 +65,11 @@ h3 {
     cursor: pointer;
   }
 `
-
-
-
-
-
 export const ContentEmail = styled.div`
 display: flex;
     flex-direction: column;
     gap: 1rem;
+    z-index: 999;
 `
 
 export const Form = styled.div`
@@ -104,4 +100,5 @@ height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid rgba(94, 94, 94, 0.5);
 `

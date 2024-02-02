@@ -12,7 +12,9 @@ export const ContainerAbout = styled.section`
   @media (max-width: 1050px) {
     flex-direction : column;
     text-align: start;
-    //justify-content: start;
+  }
+  @media (max-width:600px) {
+    padding: 3.5rem 1rem 1.5rem;
   }
 `
 export const ContentText = styled.div`
@@ -22,7 +24,7 @@ export const ContentText = styled.div`
   align-items: start;
   gap: 2rem;
   max-width: 700px;
-  width: 60%;
+  width: 50%;
   p {
     max-width: 600px;
   }
@@ -38,7 +40,7 @@ export const ContentImg = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 40%;
+  width: 50%;
 
   img {
     width: 100%;
@@ -68,5 +70,11 @@ export const ContentCardAbout = styled.div`
   }
   @media (max-width: 1050px){
     margin: -100px 0 0 0px;
+  }
+  @media (max-width: 600px){
+    margin: 0px;
+    p:not(:first-child) {
+    max-width: none;
+  }
   }
 `

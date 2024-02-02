@@ -5,18 +5,20 @@ export const ContainerCardTeam = styled.div`
 
 `
 export const ContentCardTeam = styled.div`
-  background-color: var(--primary-color);
-  padding-bottom: 1rem;
 
+  position: relative;
   h3{ 
     text-align: center;
     padding: 1rem 1.5rem;
-    background-color: var(--primary-color);
+    background-color: rgb(24 23 23 / 90%);
     border: none;
     color: var(--third-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',sans-serif;
     color: var(--third-color);
     font-size: 1.1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
   
 `

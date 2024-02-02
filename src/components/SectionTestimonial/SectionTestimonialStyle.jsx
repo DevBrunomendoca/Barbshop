@@ -12,6 +12,9 @@ export const ContainerTestimonial = styled.section`
     align-items: center;
     padding: 4rem 1rem;
   }
+  @media (max-width:600px) {
+    padding: 2.5rem 1rem ;
+  } 
 `
 
 export const ContentTextTestimonial = styled.div`

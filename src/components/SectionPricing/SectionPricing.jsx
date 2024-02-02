@@ -7,7 +7,7 @@ export default function Pricing() {
   return (
     <ContainerPricing>
       <ContentText>
-        <SecondCaption textSecondCaption="Nossa tabela de preços" />
+        <SecondCaption textSecondCaption="Nossa tabela de serviços" />
         <Paragraph textParagraph="Explore a excelência em cuidados masculinos com nossos serviços especializados. Na Barbearia Navalha Pub, garantimos cortes de cabelo modernos e tradicionais para atender ao seu estilo único. Confira todos os nossos preços abaixo:" />
         <Button textButton="Conferir mais" />
       </ContentText>

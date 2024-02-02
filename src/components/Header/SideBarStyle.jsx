@@ -3,10 +3,11 @@ import styled, { css } from 'styled-components'
 export const ContentSideBar = styled.nav`
 display: none;
 z-index: 999;
+
 ${({sideBar}) => sideBar && css`
   background-color: var(--second-color);
   position: absolute;
-  height: 350px;
+  height: 253px;
   top: 85px;
   left: 0;
   width: 100%;
@@ -15,26 +16,23 @@ ${({sideBar}) => sideBar && css`
   
   @media (max-width: 850px) {
     display: flex ;
-  height: 350px;
   }
-    
-  @keyframes showSideBar {
+
+@keyframes showSideBar {
     from {
       opacity: 0;
-      height: 250px;
+      height: 230px;
     }
     to{
       opacity: 1;
-      height: 350px;
+      height: 253px;
     }
   } 
-  
   ul {
     @media (max-width: 850px) {
     display: flex;
-
     width: 100%;
-    padding: 3rem;
+    padding: 2rem 3rem;
     
   }
   a {

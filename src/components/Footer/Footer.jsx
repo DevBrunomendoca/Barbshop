@@ -29,9 +29,6 @@ const Footer = () => {
             <Button textButton="Enviar!"/>
           </Form>
         </ContentEmail>
-        {/* <ContentPages>
-          <ListItem />
-        </ContentPages> */}
         <ListItem />
 
       </ContentFooterContact>

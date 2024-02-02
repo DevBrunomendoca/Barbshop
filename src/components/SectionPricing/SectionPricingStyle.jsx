@@ -11,8 +11,10 @@ export const ContainerPricing = styled.section`
     flex-direction: column ;
     text-align: center;
   }
+  @media (max-width:600px) {
+    padding: 2.5rem 1rem ;
+  } 
 `
-
 export const ContentText = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,7 +26,6 @@ export const ContentText = styled.div`
     align-items: center;
   }
 `
-
 export const ContentTable = styled.div`
   display: flex;
   gap: 1.5rem;

@@ -10,11 +10,15 @@ export const ContainerTeam = styled.section`
   padding: 4rem 1rem;
   h2{ 
     text-align: center;
+    padding-top: 1rem;
   }
+  @media (max-width:600px) {
+    padding: 2.5rem 1rem ;
+  } 
 ` 
 export const ContainerCardTeam = styled.div`
   margin-top: 3rem;
-  gap: 3rem;
+  gap: .5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   

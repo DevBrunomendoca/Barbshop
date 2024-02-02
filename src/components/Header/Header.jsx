@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { ContainerHeader,ContentListItemHeader, Navigation } from "./HeaderStyle"
 import Logo from "../Logo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import IconSideBar from "./IconSideBar";
 import SideBar from "./SideBar";
 
@@ -10,10 +10,25 @@ export function Header() {
   const { pathname } = useLocation()
 
   const [sideBar, setSideBar] = useState(false)
+
+  const [onScrollY, setOnScrollY] = useState(false)
   const toggleSideBar = () =>  setSideBar(!sideBar)
 
+  useEffect(() => {
+    function positionScrollY() {
+      window.scrollY > 40
+    ? setOnScrollY(true)
+    : setOnScrollY(false)
+    }
+    
+    window.addEventListener('scroll', positionScrollY)
+    return () => {
+      window.removeEventListener('scroll', positionScrollY)
+    }
+  }, [])
+
   return (
-    <ContainerHeader>
+    <ContainerHeader sideBar={sideBar} onScrollY={onScrollY} className= {` ${sideBar ? '' : "close"}`}>
       <Navigation>
         <Logo />
         <ContentListItemHeader>
@@ -22,11 +37,9 @@ export function Header() {
           <Link to="/about"
             className={`tab ${pathname === "/about" ? "active" : ""}`} >Sobre</Link>
           <Link to="/team"
-            className={`tab ${pathname === "/team" ? "active" : ""}`} >Time</Link>
+            className={`tab ${pathname === "/team" ? "active" : ""}`} >Equipe</Link>
           <Link to="/pricing"
-            className={`tab ${pathname === "/pricing" ? "active" : ""}`} >Preços</Link>
-          <Link to="/testimonials"
-            className={`tab ${pathname === "/testimonials" ? "active" : ""}`} >Comentários</Link>
+            className={`tab ${pathname === "/pricing" ? "active" : ""}`} >Serviços</Link>
           <Link to="/contacts"
             className={`tab ${pathname === "/contacts" ? "active" : ""}`} >Contato</Link>
         </ContentListItemHeader>

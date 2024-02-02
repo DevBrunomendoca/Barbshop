@@ -4,7 +4,6 @@ import RootLayout from "./src/pages/RootLayout/RootLayout";
 import Team from "./src/pages/Team/Team";
 import Pricing from "./src/pages/Pricing/Pricing";
 import Gallery from "./src/pages/Gallery/Gallery";
-import Testmonial from "./src/pages/Testmonial/Testimonial";
 import Contact from "./src/pages/Contacts/Contacts";
 import { Main } from "./src/pages/Main/Main";
 
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
       path: "gallery",
       element: <Gallery />
     },
-    {
-      path: "testimonials",
-      element: <Testmonial />
-    }, 
     {
       path: "contacts",
       element: <Contact />
