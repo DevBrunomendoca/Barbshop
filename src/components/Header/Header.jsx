@@ -18,7 +18,7 @@ export function Header() {
     function positionScrollY() {
       window.scrollY > 40
     ? setOnScrollY(true)
-    : setOnScrollY(false)
+    :  setOnScrollY(false)
     }
     
     window.addEventListener('scroll', positionScrollY)

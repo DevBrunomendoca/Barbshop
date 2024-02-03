@@ -11,7 +11,7 @@ ${({sideBar}) => sideBar && css`
   top: 85px;
   left: 0;
   width: 100%;
-  animation: showSideBar .3s;
+  animation: showSideBar .4s;
   display: none ;
   
   @media (max-width: 850px) {

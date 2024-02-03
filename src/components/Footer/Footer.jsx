@@ -25,7 +25,7 @@ const Footer = () => {
           <SecondCaption textSecondCaption='Nos envie seu E-mail' />
           <Paragraph textParagraph='Inscreva-se para receber todas as nossas novidades!' />
           <Form>
-            <input type="text" />
+            <input type="text" placeholder='Digite seu E-mail'/>
             <Button textButton="Enviar!"/>
           </Form>
         </ContentEmail>

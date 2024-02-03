@@ -45,7 +45,8 @@ export const CardTestimonialStyled = styled.div`
   display: flex;
   gap: 1rem;
   width: 100%;
-  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
   padding: 2rem;
   p, h3{
     text-align: center;

@@ -36,7 +36,7 @@ export const ContentTable = styled.div`
 `
 export const CardTable = styled.table`
 
-background-color: var(--primary-color);
+//background-color: var(--primary-color);
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -46,7 +46,7 @@ height: 100%;
 box-shadow: rgba(134, 134, 134, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 tr:first-child{
-  background-color: var(--third-color);
+  background-color: var(--primary-color);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 tr {
@@ -64,6 +64,14 @@ th, td {
   text-align: center;
 }
 th {
+  color: var(--third-color);
+  
+}
+td:last-child {
   color: var(--primary-color);
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
 }
 `

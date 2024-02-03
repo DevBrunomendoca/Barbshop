@@ -23,7 +23,7 @@ margin-top: 100px;
 display: flex;
 flex-direction: column;
 align-items: start;
-gap: 1rem;
+gap: 1.5rem;
 width: 70%;
 button {
   background-color: var(--third-color);

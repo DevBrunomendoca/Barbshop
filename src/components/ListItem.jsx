@@ -6,8 +6,8 @@ const ListItem = ({ onClick }) => {
     <ContentListItem>
       <Link onClick={onClick} to="/">Inicio</Link>
       <Link onClick={onClick} to="/about" >Sobre</Link>
-      <Link onClick={onClick} to="/team" >Time</Link>
-      <Link onClick={onClick} to="/pricing" >Preços</Link>
+      <Link onClick={onClick} to="/team" >Equipe</Link>
+      <Link onClick={onClick} to="/pricing" >Serviços</Link>
       <Link onClick={onClick} to="/contacts" >Contato</Link>
     </ContentListItem>
   )

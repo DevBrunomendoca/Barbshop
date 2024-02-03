@@ -15,7 +15,7 @@ display: none;
     position: relative;
     top: 7px;
     left: 15px;
-  }
+  } 
 .line-one {
   transform: rotate(-45deg) translate(-9px, -9px);
 }

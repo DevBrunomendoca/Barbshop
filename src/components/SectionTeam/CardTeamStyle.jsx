@@ -18,7 +18,7 @@ export const ContentCardTeam = styled.div`
     font-size: 1.1rem;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
   }
   
 `
@@ -36,7 +36,6 @@ button {
   background-color: var(--third-color);
   color: var(--primary-color);
   width: 100%;
-  margin-top: .5rem;
 }
 `
 

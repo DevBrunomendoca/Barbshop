@@ -76,9 +76,16 @@ export const Form = styled.div`
 display: flex;
 gap: .5rem;
   input{
-    padding: 1rem ;
+    padding: .5rem ;
     border: none;
     width: 100%;
+    color: var(--primary-color);
+    font-family: 'Poppins';
+    font-weight: 600;
+    outline: none;
+    &:focus {
+      border: 2px solid var(--primary-color);
+    }
   }
   button {
     background-color: var(--third-color);

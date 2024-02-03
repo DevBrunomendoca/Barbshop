@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const ButtonMain = styled.button`
 
-  padding: 1rem 1.5rem;
+  padding: .8rem 1.5rem;
   background-color: var(--primary-color);
   border: none;
   color: var(--third-color);

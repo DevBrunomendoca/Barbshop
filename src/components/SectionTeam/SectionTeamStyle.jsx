@@ -18,7 +18,7 @@ export const ContainerTeam = styled.section`
 ` 
 export const ContainerCardTeam = styled.div`
   margin-top: 3rem;
-  gap: .5rem;
+  gap: 3rem .5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   
