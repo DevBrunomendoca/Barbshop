@@ -22,11 +22,7 @@ const SectionContact = () => {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: "#content-contact",
-<<<<<<< HEAD
           start: "-600px"
-=======
-          start: "-650px"
->>>>>>> 784b11dd1aff79ebb0694e909dedbfdf4106a510
         }
       })
 
