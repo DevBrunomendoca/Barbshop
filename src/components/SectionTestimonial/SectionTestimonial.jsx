@@ -30,8 +30,8 @@ export default function SectionTestimonial() {
   }, [])
   const data = [
     { id: '1', avatar: '/foto-perfil-cliente1.jpg', name: 'Andre Luiz', comment: "Excelente experiência na barbearia! Atendimento impecável, ambiente agradável e corte perfeito. Recomendo a todos!" },
-    { id: '2', avatar: '/foto-perfil-cliente2.jpg', name: 'Michelle Araujo', comment: "Profissionais incríveis, ambiente descontraído. Meu corte ficou exatamente como eu queria. Voltarei com certeza!" },
-    { id: '3', avatar: '/foto-perfil-cliente3.jpg', name: 'Anna Beatriz', comment: "Serviço de alta qualidade! Equipe atenciosa, ambiente moderno. Minha barba nunca esteve tão bem cuidada. Cliente fiel!" },
+    { id: '2', avatar: '/foto-perfil-cliente2.jpg', name: 'Lucas Araujo', comment: "Profissionais incríveis, ambiente descontraído. Meu corte ficou exatamente como eu queria. Voltarei com certeza!" },
+    { id: '3', avatar: '/foto-perfil-cliente3.jpg', name: 'Marcos Paulo', comment: "Serviço de alta qualidade! Equipe atenciosa, ambiente moderno. Minha barba nunca esteve tão bem cuidada. Cliente fiel!" },
     { id: '4', avatar: '/foto-perfil-cliente4.jpg', name: 'Wesley Silva ', comment: "Barbearia top! Corte estiloso, atendimento nota 10. Apreciei a atenção aos detalhes. Recomendo a amigos e familiares!Barbearia top! Corte estiloso, atendimento nota 10. Apreciei a atenção aos detalhes. Recomendo a amigos e familiares!" }
   ]
 

@@ -96,7 +96,7 @@ div:nth-child(8) {
   margin-top: 3rem;
 }
 `
-export const CardImgGallery = styled.div`
+export const CardContentImgGallery = styled.div`
   padding: 0;
   overflow: hidden;
   position: relative;

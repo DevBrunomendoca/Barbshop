@@ -4,11 +4,13 @@ export const ContentSideBar = styled.nav`
 display: none;
 z-index: 999;
 
+
 ${({sideBar}) => sideBar && css`
   background-color: var(--second-color);
   position: absolute;
-  height: 253px;
-  top: 85px;
+  height: 250px;
+  
+  top: 83px;
   left: 0;
   width: 100%;
   animation: showSideBar .4s;
@@ -25,7 +27,7 @@ ${({sideBar}) => sideBar && css`
     }
     to{
       opacity: 1;
-      height: 253px;
+      height: 250px;
     }
   } 
   ul {

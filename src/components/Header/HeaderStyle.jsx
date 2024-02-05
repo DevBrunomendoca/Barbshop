@@ -7,7 +7,7 @@ export const ContainerHeader = styled.header`
   left: 0;
   top: 0;
   width: 100%;
-  transition: all .4s;
+  transition: all .2s;
   z-index: 1000;
   
   ${({onScrollY}) => onScrollY && css`
