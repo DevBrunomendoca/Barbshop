@@ -61,7 +61,7 @@ Há uma década, a Barbearia Navalha Pub surgiu como uma visão concreta de eleg
         {/*<img src="imagem-cortes4.jpg" alt="" />
          <ImageComponent imageId="4"/> */}
         <ContentCardAbout >
-          <Paragraph textParagraph="Bruno Mendonça" />
+          <Paragraph textParagraph="Lucas Teodoro" />
           <Paragraph textParagraph="Proprietário e fundador da Barbearia Navalha Pub desde 2014." />
         </ContentCardAbout>
       </ContentImg>
