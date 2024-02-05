@@ -6,9 +6,58 @@ import CardImgGallery from "./CardImgGallery"
 import ModalImage from "./ModalImage"
 import { ContainerGallery, ContainerCardGallery } from "./SectionGalleryStyle"
 
+import { useRef, useLayoutEffect } from 'react'
+import { gsap } from 'gsap/gsap-core'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 export default function SectionGallery({ }) {
   const [clickImage, setClickImage] = useState(null)
   const [indexImage, setIndexImage] = useState(null)
+
+  const tl = useRef(null)
+  const el = useRef(null)
+
+  useLayoutEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.context(() => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#content-gallery",
+          start: "-650px"
+        }
+      })
+        .fromTo("#caption-gallery", {
+          opacity: 0,
+          y: 80
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.5
+        })
+        .fromTo("#second-caption-gallery", {
+          opacity: 0,
+          y: 40
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.5
+        })
+        .fromTo("#content-card-gallery", {
+          opacity: 0,
+          y: 140
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.5
+        })
+        
+
+    })
+    return () => {
+      gsap.killTweensOf("#content-gallery")
+    }
+  }, [])
 
   const closeModal = () => {
     setClickImage(null)
@@ -16,7 +65,7 @@ export default function SectionGallery({ }) {
   }
   const handleClickNext = () => {
     const totalLenght = data.length
-    if(indexImage + 1 >= totalLenght) {
+    if (indexImage + 1 >= totalLenght) {
       setIndexImage(0)
       const newImg = data[0].urlImage
       setClickImage(newImg)
@@ -27,23 +76,23 @@ export default function SectionGallery({ }) {
       return data.indexOf(item) === newIndex
     })
     const newItem = newImg[0].urlImage
-    setClickImage(newItem) 
+    setClickImage(newItem)
     setIndexImage(newIndex)
   }
-  const  handleClickPrev = () => {
+  const handleClickPrev = () => {
     const totalLenght = data.length
-    if(indexImage === 0) {
-      setIndexImage(totalLenght -1)
-      const newImg = data[totalLenght -1].urlImage
+    if (indexImage === 0) {
+      setIndexImage(totalLenght - 1)
+      const newImg = data[totalLenght - 1].urlImage
       setClickImage(newImg)
-      return  
+      return
     }
     const newIndex = indexImage - 1
     const newImg = data.filter((item) => {
       return data.indexOf(item) === newIndex
     })
     const newItem = newImg[0].urlImage
-    setClickImage(newItem) 
+    setClickImage(newItem)
     setIndexImage(newIndex)
   }
 
@@ -56,19 +105,20 @@ export default function SectionGallery({ }) {
     { id: '6', urlImage: '/imagem-galeria20.jpg', altImage: 'imagem da galeria 6' },
     { id: '7', urlImage: '/imagem-galeria17.jpg', altImage: 'imagem da galeria 7' },
     { id: '8', urlImage: '/imagem-galeria14.jpg', altImage: 'imagem da galeria 8' }
-
   ]
-  
+
+
+
   return (
     <>
-      <ContainerGallery>
-        <Caption textCaption="Galeria" />
-        <SecondCaption textSecondCaption="Nossa Galeria de fotos" />
-        <ContainerCardGallery>
-          <CardImgGallery indexImage={indexImage} setClickImage={setClickImage} setIndexImage={setIndexImage} />
+      <ContainerGallery id="content-gallery">
+        <Caption id='caption-gallery' textCaption="Galeria" />
+        <SecondCaption id='second-caption-gallery' textSecondCaption="Nossa Galeria de fotos" />
+        <ContainerCardGallery id='content-card-gallery'>
+          <CardImgGallery   indexImage={indexImage} setClickImage={setClickImage} setIndexImage={setIndexImage} />
         </ContainerCardGallery>
       </ContainerGallery>
-      {clickImage && <ModalImage onClickNext={handleClickNext} onClickPrev={handleClickPrev}  onClick={closeModal}  clickImage={clickImage} />}
+      {clickImage && <ModalImage onClickNext={handleClickNext} onClickPrev={handleClickPrev} onClick={closeModal} clickImage={clickImage} />}
     </>
   )
 }

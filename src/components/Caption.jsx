@@ -1,7 +1,7 @@
 import { CaptionStyled } from "./CaptionStyle"
 
-export default function Caption({ textCaption }) {
+export default function Caption({id, textCaption }) {
   return(
-    <CaptionStyled>{textCaption}</CaptionStyled>
+    <CaptionStyled id={id}>{textCaption}</CaptionStyled>
   )
 }

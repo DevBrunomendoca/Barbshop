@@ -4,7 +4,7 @@ export const ContainerAbout = styled.section`
   min-height: 90vh;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 6rem 1rem 4rem;
+  padding: 4rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

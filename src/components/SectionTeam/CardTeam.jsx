@@ -3,9 +3,12 @@ import ImageComponent from "../ImageComponent"
 import SocialMedia from "../SocialMedia"
 import { ContainerCardTeam, ContentCardTeam, SocialMedias, ContentButton } from "./CardTeamStyle"
 
-export default function CardTeam({ imageId, name, src }) {
+export default function CardTeam({id, imageId, name, src }) {
+  
+
+
   return (
-    <ContainerCardTeam>
+    <ContainerCardTeam id={id}>
       <ContentCardTeam>
 
         <img src={src} alt="" />

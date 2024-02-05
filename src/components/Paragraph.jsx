@@ -1,7 +1,7 @@
 import { ParagraphStyled } from "./ParagraphStyle"
 
-export default function Paragraph({ textParagraph }) {
+export default function Paragraph({id, textParagraph }) {
   return(
-    <ParagraphStyled>{textParagraph}</ParagraphStyled>
+    <ParagraphStyled id={id}>{textParagraph}</ParagraphStyled>
   )
 }

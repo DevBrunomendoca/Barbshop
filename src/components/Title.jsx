@@ -1,7 +1,7 @@
 import { TitleStyled } from "./TitleStyle"
 
-export default function Title({textTitle}) {
+export default function Title({id, textTitle}) {
   return(
-    <TitleStyled>{textTitle}</TitleStyled>
+    <TitleStyled id={id}>{textTitle}</TitleStyled>
   )
 }

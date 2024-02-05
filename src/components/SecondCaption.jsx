@@ -1,7 +1,7 @@
 import { SecondCaptionStyled } from "./SeconnCaptionStyle"
 
-export default function SecondCaption({ textSecondCaption }) {
+export default function SecondCaption({id, textSecondCaption }) {
   return(
-    <SecondCaptionStyled>{textSecondCaption}</SecondCaptionStyled>
+    <SecondCaptionStyled id={id}>{textSecondCaption}</SecondCaptionStyled>
   )
 }

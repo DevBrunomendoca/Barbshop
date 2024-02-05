@@ -2,7 +2,7 @@ import { useState } from "react"
 import { CardContentImgGallery } from "./SectionGalleryStyle"
 import ModalImage from "./ModalImage"
 
-const CardImgGallery = ({ setClickImage, setIndexImage, indexImage }) => {
+const CardImgGallery = ({ setClickImage, setIndexImage, indexImage, id }) => {
 
   
 
@@ -10,24 +10,6 @@ const CardImgGallery = ({ setClickImage, setIndexImage, indexImage }) => {
     setIndexImage(index)
     setClickImage(item.urlImage)
   }
-
-  const handleClickPrev = () => {
-    const totalLenght = data.length
-    if(indexImage + 1 >= totalLenght) {
-      setIndexImage(0)
-      const newImg = data[0].urlImage
-      setClickImage(newImg)
-      return
-    }
-    const newIndex = indexImage + 1
-    const newImg = data.filter((item) => {
-      return data.indexOf(item) === newIndex
-    })
-    const newItem = newImg[0].urlImage
-    setClickImage(newItem) 
-    setIndexImage(newIndex)
-  }
-
 
   const data = [
     { id: '1', urlImage: '/imagem-galeria23.jpg', altImage: 'imagem da galeria 1' },
@@ -38,13 +20,12 @@ const CardImgGallery = ({ setClickImage, setIndexImage, indexImage }) => {
     { id: '6', urlImage: '/imagem-galeria20.jpg', altImage: 'imagem da galeria 6' },
     { id: '7', urlImage: '/imagem-galeria17.jpg', altImage: 'imagem da galeria 7' },
     { id: '8', urlImage: '/imagem-galeria14.jpg', altImage: 'imagem da galeria 8' }
-
   ]
 
   return (
     <>
       {data.map((item, index) => (
-        <CardContentImgGallery key={item.id}>
+        <CardContentImgGallery  key={item.id}>
           <img
             src={item.urlImage}
             alt={item.altImage}

@@ -7,7 +7,12 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Caption from "../Caption";
 import SecondCaption from "../SecondCaption"
 import Paragraph from '../Paragraph'
-//import { CardTestimonialStyled } from "./CardTestimonialStyle";
+
+import { gsap } from 'gsap'
+import { useLayoutEffect, useRef } from 'react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+
 
 export default function SectionTestimonial() {
   const [sliderPreview, setSliderPreview] = useState(2)
@@ -28,6 +33,42 @@ export default function SectionTestimonial() {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
+  const tl = useRef(null)
+  const el = useRef(null)
+
+  useLayoutEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.context(() => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#content-testimonial",
+          start: "top bottom"
+        }
+      })
+
+        .fromTo("#content-text-testmonial", {
+          opacity: 0,
+          y: -140
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.5
+        })
+        .fromTo("#content-card-testmonial", {
+          opacity: 0,
+          y: 80
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.5
+        })
+
+    })
+    return () => {
+      gsap.killTweensOf("#content-testimonial")
+    }
+  }, [])
   const data = [
     { id: '1', avatar: '/foto-perfil-cliente1.jpg', name: 'Andre Luiz', comment: "Excelente experiência na barbearia! Atendimento impecável, ambiente agradável e corte perfeito. Recomendo a todos!" },
     { id: '2', avatar: '/foto-perfil-cliente2.jpg', name: 'Lucas Araujo', comment: "Profissionais incríveis, ambiente descontraído. Meu corte ficou exatamente como eu queria. Voltarei com certeza!" },
@@ -36,13 +77,13 @@ export default function SectionTestimonial() {
   ]
 
   return (
-    <ContainerTestimonial>
-      <ContentTextTestimonial>
+    <ContainerTestimonial ref={el} id="content-testimonial">
+      <ContentTextTestimonial id="content-text-testmonial">
         <Caption textCaption='Depoimentos'/>
         <SecondCaption textSecondCaption='O que nossos clientes dizem'/>
         <Paragraph textParagraph='Confira alguns depoimentos reais que refletem a satisfação e a felicidade de nossos clientes!'/>
       </ContentTextTestimonial>
-      <ContentCardTestimonial>
+      <ContentCardTestimonial id="content-card-testmonial">
         <Swiper
           slidesPerView={sliderPreview}
           spaceBetween={30}

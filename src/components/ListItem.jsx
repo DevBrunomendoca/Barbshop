@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 import { ContentListItem } from "./ListItemStyle"
 
-const ListItem = ({ onClick }) => {
+const ListItem = ({ onClick, id }) => {
   return (
-    <ContentListItem>
+    <ContentListItem  id={id}>
       <Link onClick={onClick} to="/">Inicio</Link>
       <Link onClick={onClick} to="/about" >Sobre</Link>
       <Link onClick={onClick} to="/team" >Equipe</Link>
