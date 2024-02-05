@@ -43,7 +43,7 @@ export default function SectionTestimonial() {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: "#content-testimonial",
-          start: "top bottom"
+          start: "-650px"
         }
       })
 

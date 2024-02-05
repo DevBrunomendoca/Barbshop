@@ -49,7 +49,7 @@ export default function Pricing() {
 
     })
     return () => {
-      gsap.killTweensOf("#content-text")
+      gsap.killTweensOf("#content-princing")
     }
   }, [])
 

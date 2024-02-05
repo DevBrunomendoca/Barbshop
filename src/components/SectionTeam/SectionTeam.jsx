@@ -19,7 +19,7 @@ export default function SectionTeam() {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: "#content-team",
-          start: "top bottom"
+          start: "-650px"
         }
       })
 
@@ -74,7 +74,7 @@ export default function SectionTeam() {
 
     })
     return () => {
-      gsap.killTweensOf("#content-home")
+      gsap.killTweensOf("#content-team")
     }
   }, [])
   return(
