@@ -19,21 +19,12 @@ export default function SectionAbout() {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: "#content-about",
-          start: "-650px"
+          start: "300px bottom"
         }
       })
-
-        .fromTo("#content-text-about", {
-          opacity: 0,
-          x: -100
-        }, {
-          opacity: 1,
-          x: 0,
-          duration: 1.5
-        })
         .fromTo("#content-img", {
           opacity: 0,
-          y: 120
+          y: 140
         }, {
           opacity: 1,
           y: 0,

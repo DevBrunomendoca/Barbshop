@@ -19,29 +19,12 @@ export default function SectionTeam() {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: "#content-team",
-          start: "-650px"
+          start: "200px bottom"
         }
       })
-
-        .fromTo("#caption-team", {
-          opacity: 0,
-          y: -90
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 1
-        })
-        .fromTo("#second-caption-team", {
-          opacity: 0,
-          y: 40
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 1
-        })
         .fromTo("#card-one", {
           opacity: 0,
-          y: 80
+          y: 100
         }, {
           opacity: 1,
           y: 0,
@@ -49,7 +32,7 @@ export default function SectionTeam() {
         })
         .fromTo("#card-two", {
           opacity: 0,
-          y: 80
+          y: 100
         }, {
           opacity: 1,
           y: 0,
@@ -57,7 +40,7 @@ export default function SectionTeam() {
         })
         .fromTo("#card-three", {
           opacity: 0,
-          y: 80
+          y: 100
         }, {
           opacity: 1,
           y: 0,
@@ -65,7 +48,7 @@ export default function SectionTeam() {
         })
         .fromTo("#card-four", {
           opacity: 0,
-          y: 80
+          y: 100
         }, {
           opacity: 1,
           y: 0,

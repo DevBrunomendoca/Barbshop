@@ -27,22 +27,6 @@ export default function SectionGallery({ }) {
           start: "-650px"
         }
       })
-        .fromTo("#caption-gallery", {
-          opacity: 0,
-          y: 80
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 1.5
-        })
-        .fromTo("#second-caption-gallery", {
-          opacity: 0,
-          y: 40
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 1.5
-        })
         .fromTo("#content-card-gallery", {
           opacity: 0,
           y: 140

@@ -46,15 +46,6 @@ export default function SectionTestimonial() {
           start: "-650px"
         }
       })
-
-        .fromTo("#content-text-testmonial", {
-          opacity: 0,
-          y: -140
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 1.5
-        })
         .fromTo("#content-card-testmonial", {
           opacity: 0,
           y: 80

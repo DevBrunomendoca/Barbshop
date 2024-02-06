@@ -19,17 +19,9 @@ export default function Pricing() {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: "#content-princing",
-          start: "-600px"
+          start: "180px bottom"
         }
       })
-        .fromTo("#content-text", {
-          opacity: 0,
-          y: -100
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 1.8
-        })
         .fromTo("#content-table-one", {
           opacity: 0,
           x: -140
