@@ -5,60 +5,14 @@ import { ContainerFooter, ContentFooterContact, ContenLocation,  ContentEmail, F
 import Button from '../Button'
 import ListItem from '../ListItem'
 
-import { gsap } from 'gsap'
-import { useLayoutEffect, useRef } from 'react'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Footer = () => {
-  const tl = useRef(null)
-  const el = useRef(null)
-
-  useLayoutEffect(() => {
-
-    gsap.registerPlugin(ScrollTrigger)
-    gsap.context(() => {
-      tl.current = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#content-footer",
-          start: "-700px"
-        }
-      })
-
-        .fromTo("#content-location", {
-          opacity: 0,
-          y: 80
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 1.2
-        })
-        .fromTo("#content-email", {
-          opacity: 0,
-          y: 80
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 1.2
-        })
-        .fromTo("#content-list-itens", {
-          opacity: 0,
-          y: 80
-        }, {
-          opacity: 1,
-          y: 0,
-          duration: 1.2
-        })
-
-    })
-    return () => {
-      gsap.killTweensOf("#content-footer")
-    }
-  }, [])
+  
   return (
     <ContainerFooter>
         <Navalha src="/image-navalha.png" alt="" />
-      <ContentFooterContact ref={el} id='content-footer'>
-        <ContenLocation id='content-location'>
+      <ContentFooterContact  >
+        <ContenLocation >
           <div>
             <img src="/icone-localizacao.png" alt="" />
             <SecondCaption textSecondCaption='Localização' />
@@ -68,7 +22,7 @@ const Footer = () => {
           <Paragraph textParagraph='(62) 98376-6284' />
           <Logo />
         </ContenLocation>
-        <ContentEmail id='content-email'>
+        <ContentEmail>
           <SecondCaption textSecondCaption='Nos envie seu E-mail' />
           <Paragraph textParagraph='Inscreva-se para receber todas as nossas novidades!' />
           <Form>
@@ -76,7 +30,7 @@ const Footer = () => {
             <Button textButton="Enviar!"/>
           </Form>
         </ContentEmail>
-        <ListItem id='content-list-itens'/>
+        <ListItem />
 
       </ContentFooterContact>
       <ContentCopyright>
