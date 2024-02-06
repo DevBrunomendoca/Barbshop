@@ -5,12 +5,11 @@ import Pricing from '../../components/SectionPricing/SectionPricing'
 import SectionTestimonial from '../../components/SectionTestimonial/SectionTestimonial'
 import SectionGallery from '../../components/SectionGallery/SectionGallery'
 import SectionContact from '../../components/SectionContact/SectionContact'
-import { ContainerMain } from './MainStyle'
 
-export function Main() {
+export function HomePage() {
   
   return (
-    <ContainerMain>
+    <>
       <Home />
       <SectionAbout />
       <SectionTeam />
@@ -18,7 +17,7 @@ export function Main() {
       <SectionGallery />
       <SectionTestimonial />
       <SectionContact />
-    </ContainerMain>
+    </>
   )
   
 }

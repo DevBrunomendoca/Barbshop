@@ -5,7 +5,10 @@ import Team from "./src/pages/Team/Team";
 import Pricing from "./src/pages/Pricing/Pricing";
 import Gallery from "./src/pages/Gallery/Gallery";
 import Contact from "./src/pages/Contacts/Contacts";
-import { Main } from "./src/pages/Main/Main";
+
+import { Home } from "./src/pages/Home/Home";
+import { HomePage } from "./src/pages/Main/Main";
+
 
 const router = createBrowserRouter([
   {
@@ -14,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
       index: true,
-      element: <Main />
+      element: <HomePage />
     },
     {
       path: "about",
