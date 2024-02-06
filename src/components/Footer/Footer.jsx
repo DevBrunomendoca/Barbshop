@@ -20,7 +20,7 @@ const Footer = () => {
       tl.current = gsap.timeline({
         scrollTrigger: {
           trigger: "#content-footer",
-          start: "top bottom"
+          start: "-700px"
         }
       })
 

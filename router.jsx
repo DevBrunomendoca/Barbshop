@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import { About } from "./src/pages/About/About";
 import RootLayout from "./src/pages/RootLayout/RootLayout";
 import Team from "./src/pages/Team/Team";
@@ -9,22 +9,38 @@ import Contact from "./src/pages/Contacts/Contacts";
 import { Home } from "./src/pages/Home/Home";
 import { HomePage } from "./src/pages/Main/Main";
 
-const AppRouter = () => (
-  <Router>
-    <Routes>
-      <Route
-        path="/"
-        element={<RootLayout />}
-      >
-        <Route index element={<HomePage />} />
-        <Route path="about" element={<About />} />
-        <Route path="team" element={<Team />} />
-        <Route path="pricing" element={<Pricing />} />
-        <Route path="gallery" element={<Gallery />} />
-        <Route path="contacts" element={<Contact />} />
-      </Route>
-    </Routes>
-  </Router>
-);
 
-export default AppRouter;
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+    {
+      index: true,
+      element: <HomePage />
+    },
+    {
+      path: "about",
+      element: <About />
+    },
+    {
+      path: "team",
+      element: <Team />
+    },
+    {
+      path: "pricing",
+      element: <Pricing />
+    },
+    {
+      path: "gallery",
+      element: <Gallery />
+    },
+    {
+      path: "contacts",
+      element: <Contact />
+    }
+  ]
+  }
+])
+
+export default router
