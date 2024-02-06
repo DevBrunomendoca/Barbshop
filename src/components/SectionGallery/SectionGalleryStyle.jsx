@@ -16,6 +16,7 @@ export const ContainerGallery = styled.section`
 export const ContainerCardGallery = styled.div`
 margin-top: 6rem;
   display: grid;
+  
   position: relative;
   justify-content: center;
 place-items: center;

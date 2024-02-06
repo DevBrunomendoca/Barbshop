@@ -11,7 +11,7 @@ export const ContainerHeader = styled.header`
   z-index: 1000;
   
   ${({onScrollY}) => onScrollY && css`
-  background-color: rgba(29,29,29,0.97);
+  background-color: rgba(20,20,20,0.94);
   `}
 
   ${({sideBar}) => sideBar && css`
