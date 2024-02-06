@@ -23,34 +23,42 @@ export default function Team() {
       })
         .fromTo("#card1", {
           opacity: 0,
-          y: 160
+          y: 200,
+          x: -100
         }, {
           opacity: 1,
           y: 0,
+          x: 0,
           duration: 1.3
         })
         .fromTo("#card2", {
           opacity: 0,
-          y: 160
+          y: 200,
+          x: -100
         }, {
           opacity: 1,
           y: 0,
+          x: 0,
           duration: 1.3
         })
         .fromTo("#card3", {
           opacity: 0,
-          y: 160
+          y: 200,
+          x: -100
         }, {
           opacity: 1,
           y: 0,
+          x: 0,
           duration: 1.3
         })
         .fromTo("#card4", {
           opacity: 0,
-          y: 160
+          y: 200,
+          x: -100
         }, {
           opacity: 1,
           y: 0,
+          x: 0,
           duration: 1.3
         })
 
