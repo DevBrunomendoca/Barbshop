@@ -1,4 +1,3 @@
-import Caption from '../../components/Caption'
 import Paragraph from '../../components/Paragraph'
 import SecondCaption from '../../components/SecondCaption'
 import Title from '../../components/Title'
