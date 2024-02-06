@@ -8,7 +8,7 @@ export default function RootLayout() {
     <>
       <Header />
         <Outlet />
-      <Footer />
+      {/* <Footer />  */}
     </>
   )
 }
