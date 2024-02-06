@@ -39,7 +39,9 @@ display: flex;
 `
 export const ContentAboutUnit = styled.div`
   display: flex;
-  align-items: start;
+  align-items: center;
+  gap: 1rem;
+  
   
   width: 100%;
 @media (max-width:1050px ){

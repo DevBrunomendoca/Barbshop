@@ -3,7 +3,45 @@ import SecondCaption from '../../components/SecondCaption'
 import Title from '../../components/Title'
 import { ContainerAboutPage, ContentBanner, ContentAbout, ContentAboutText, ContentAboutUnit, UnitText, UnitBanner } from './AboutStyle'
 
+import { gsap } from 'gsap'
+import { useLayoutEffect, useRef } from 'react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 export function About() {
+  const tl = useRef(null)
+  const el = useRef(null)
+  useLayoutEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.context(() => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#content-unit",
+          start: "top bottom"
+        }
+      })
+        .fromTo("#content-banner", {
+          opacity: 0,
+          y: 140
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.3
+        })
+        .fromTo("#content-text", {
+          opacity: 0,
+          y: 140
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.3
+        })
+
+    })
+    return () => {
+      gsap.killTweensOf("#content-unit")
+    }
+  }, [])
   return (
     <ContainerAboutPage>
       <ContentBanner></ContentBanner>
@@ -17,15 +55,15 @@ export function About() {
           <Paragraph textParagraph='Cada corte de cabelo é uma expressão única de habilidade artística, refletindo não apenas a dedicação de nossos barbeiros, mas também a história rica que nos trouxe até aqui. Convidamos você a fazer parte desta jornada, onde a excelência é uma tradição, e cada cliente é uma parte vital da nossa história de sucesso.' />
         </ContentAboutText>
         <SecondCaption textSecondCaption='Conheça a nossa unidade' />
-        <ContentAboutUnit>
-          <UnitBanner>
+        <ContentAboutUnit id='content-unit' ref={el}>
+          <UnitBanner id='content-banner'>
             <img src="/banner-principal.jpg" alt="" />
           </UnitBanner>
-          <UnitText>
+          <UnitText id='content-text'>
             <SecondCaption textSecondCaption='Marista' />
             <Paragraph textParagraph='Localizada em um dos bairros mais tradicionais de Goiânia' />
             <Paragraph textParagraph='Convidamos você a fazer parte desta jornada, onde a excelência é uma tradição, e cada cliente é uma parte vital da nossa história de sucesso.' />
-            <Paragraph textParagraph='Av. Mutirão, 2189
+            <Paragraph textParagraph='Av. Mutirão, 1240
             Setor Marista'/>
             <a href="#">AGENDAMENTO WHATSAPP </a>
             <a href="#">NOSSA LOCALIZAÇÃO</a>
