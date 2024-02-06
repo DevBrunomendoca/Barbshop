@@ -1,9 +1,8 @@
 import styled from "styled-components"
 
 export const ContainerCardTeam = styled.div`
-
-
 `
+
 export const ContentCardTeam = styled.div`
 
   position: relative;
