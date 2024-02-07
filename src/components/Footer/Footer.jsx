@@ -17,7 +17,7 @@ const Footer = () => {
             <img src="/icone-localizacao.png" alt="" />
             <SecondCaption textSecondCaption='Localização' />
           </div>
-          <Paragraph textParagraph='Av. São José' />
+          <Paragraph textParagraph='Av. Mutirão, 1240 Setor Marista' />
           <Paragraph textParagraph='Goiânia-GO 74465-011' />
           <Paragraph textParagraph='(62) 98376-6284' />
           <Logo />

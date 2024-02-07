@@ -33,6 +33,11 @@ p, h3 {
   text-align: start;
   color: var(--second-color);
 }
-
+button {
+  border: 2px solid transparent;
+  &:hover {
+    border: 2px solid var(--primary-color);
+  }
+}
 
 `

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerHome = styled.section`
 
   min-height: 90vh;
-  background: linear-gradient(90deg, rgba(29,29,29,0.9528186274509804) 0%, rgba(29,29,29,0.5438550420168067) 25%, rgba(29,29,29,0.5046393557422969) 75%, rgba(29,29,29,0.9612219887955182) 100%), url('/imagem-galeria27.jpg') no-repeat center;
+  background: linear-gradient(90deg, rgba(29,29,29,0.9528186274509804) 0%, rgba(29,29,29,0.5438550420168067) 25%, rgba(29,29,29,0.5046393557422969) 75%, rgba(29,29,29,0.9612219887955182) 100%), url('/banner-principal2.jpg') no-repeat center;
   background-size: cover;
   display: flex;
   align-items: center;

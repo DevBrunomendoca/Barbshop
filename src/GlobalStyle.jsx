@@ -47,4 +47,27 @@ body {
 }
 .active:hover ::after {}
   width: 100%;
+
+
+.active-service { 
+  background-color: red;
+}
+
+
+.active-combo {
+
+  border-bottom:3px solid var(--third-color);
+  /* position: relative;
+  left: 0px;
+  height: 4px;
+  width: 110px;
+background-color: var(--third-color); */
+}
+.active-hair {
+  position: relative;
+  left: 115px;
+  height: 4px;
+  width: 110px;
+background-color: var(--third-color);
+}
 `

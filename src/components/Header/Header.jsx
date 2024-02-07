@@ -16,11 +16,10 @@ export function Header() {
 
   useEffect(() => {
     function positionScrollY() {
-      window.scrollY > 40
+      window.scrollY > 100
     ? setOnScrollY(true)
     :  setOnScrollY(false)
     }
-    
     window.addEventListener('scroll', positionScrollY)
     return () => {
       window.removeEventListener('scroll', positionScrollY)
@@ -38,8 +37,8 @@ export function Header() {
             className={`tab ${pathname === "/about" ? "active" : ""}`} >Sobre</Link>
           <Link to="/team"
             className={`tab ${pathname === "/team" ? "active" : ""}`} >Equipe</Link>
-          <Link to="/pricing"
-            className={`tab ${pathname === "/pricing" ? "active" : ""}`} >Serviços</Link>
+          <Link to="/services"
+            className={`tab ${pathname === "/services" ? "active" : ""}`} >Serviços</Link>
           <Link to="/contacts"
             className={`tab ${pathname === "/contacts" ? "active" : ""}`} >Contato</Link>
         </ContentListItemHeader>

@@ -13,9 +13,9 @@ export default function CardTeam({id, imageId, name, src }) {
         {/* <ImageComponent imageId={imageId} /> */}
         <h3>{name}</h3>
       </ContentCardTeam>
-      <ContentButton>
+      {/* <ContentButton>
         <Button textButton='Agendar um horário' />
-      </ContentButton>
+      </ContentButton> */}
     </ContainerCardTeam>
   )
 }
