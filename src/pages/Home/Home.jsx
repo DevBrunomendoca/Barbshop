@@ -10,6 +10,7 @@ import Button from "../../components/Button"
 import { gsap } from 'gsap'
 import { useLayoutEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Link } from "react-router-dom"
 
 export function Home() {
 
@@ -49,7 +50,9 @@ export function Home() {
           <Caption  textCaption="Bem-vindo à Navalha Pub"/>
           <Title  textTitle="Barbearia Exclusiva: Estilo e Elegância em Cada Corte." />
           <Paragraph  textParagraph="Descubra a arte da barbearia em um ambiente acolhedor, onde a qualidade é a nossa prioridade."/>
-          <Button textButton= 'Agendar horário' />
+          <Link to='/services'>  <Button textButton= 'Agendar horário' /></Link>
+          
+          
         </ContentHomeText>
       </ContentHome>
     </ContainerHome>

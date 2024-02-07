@@ -26,13 +26,10 @@ align-items: start;
 gap: 1.5rem;
 width: 70%;
 button {
-  background-color: var(--third-color);
-  color: var(--primary-color);
+  background-color: transparent;
+  color: var(--third-color);
   border: 2px solid var(--third-color);
-  &:hover {
-    background-color: transparent;
-    color: var(--third-color);
-  }
+  
 }
 @media (max-width:1050px) {
   align-items: center;

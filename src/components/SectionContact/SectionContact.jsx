@@ -8,6 +8,7 @@ import Button from '../Button'
 import { gsap } from 'gsap'
 import { useLayoutEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Link } from 'react-router-dom'
 
 
 
@@ -54,7 +55,9 @@ const SectionContact = () => {
         <ContentContactOne id='contact-one'>
           <SecondCaption textSecondCaption='EQUIPE DE PROFISSIONAIS ESTÁ ESPERANDO POR VOCÊ' />
           <Paragraph textParagraph='Risus odio lobortis ullamcorper felis vitae bibendum mi. Penatibus fusce consequat donec vitae porttitor elementum volutpat gravida. Tellus hac tristique nisi, id amet cras tempor, amet.' />
-          <Button textButton='Agendar horário' />
+          <Link to='/services'> <Button textButton='Agendar horário'/></Link>
+          
+          
         </ContentContactOne>
         <ContentContactTwo id='contact-two'>
           <SecondCaption textSecondCaption='HORÁRIO ESPECIAL DE FUNCIONAMENTO' />

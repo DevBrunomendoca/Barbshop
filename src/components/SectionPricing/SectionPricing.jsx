@@ -7,6 +7,7 @@ import { ContainerPricing, ContentText, ContentTable, CardTable } from "./Sectio
 import { useRef, useLayoutEffect } from 'react' 
 import { gsap } from 'gsap/gsap-core'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Link } from "react-router-dom";
 export default function Pricing() {
 
   const tl = useRef(null)
@@ -50,7 +51,9 @@ export default function Pricing() {
       <ContentText id="content-text">
         <SecondCaption textSecondCaption="Nossa tabela de serviços" />
         <Paragraph textParagraph="Explore a excelência em cuidados masculinos com nossos serviços especializados. Na Barbearia Navalha Pub, garantimos cortes de cabelo modernos e tradicionais para atender ao seu estilo único. Confira todos os nossos preços abaixo:" />
-        <Button textButton="Conferir mais" />
+        <Link to='/services'> <Button textButton="Conferir mais" /></Link>
+        
+        
       </ContentText>
       <ContentTable id="content-table-one">
         <CardTable>
