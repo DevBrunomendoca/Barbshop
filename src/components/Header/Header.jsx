@@ -38,7 +38,7 @@ export function Header() {
           <Link to="/team"
             className={`tab ${pathname === "/team" ? "active" : ""}`} >Equipe</Link>
           <Link to="/services"
-            className={`tab ${pathname === "/services" ? "active" : ""}`} >Serviços</Link>
+            className={`tab ${pathname === "/services"  ? "active" : ""}`} >Serviços</Link>
           <Link to="/contacts"
             className={`tab ${pathname === "/contacts" ? "active" : ""}`} >Contato</Link>
         </ContentListItemHeader>

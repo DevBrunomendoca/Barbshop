@@ -15,8 +15,8 @@ const Services = () => {
           <NavigationTable>
             <ul>
               
-                <Link to="/services/"
-                  className={`${pathname === "/services/" ? "active-combo" : ""}`}>Combos
+                <Link to="/services"
+                  className={`${pathname === "/services" ? "active-combo" : ""}`}>Combos
                 </Link>
 
                 <Link to="/services/hair"
