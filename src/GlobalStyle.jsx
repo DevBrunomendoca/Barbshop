@@ -54,20 +54,9 @@ body {
 }
 
 
-.active-combo {
+.active-border {
 
   border-bottom:3px solid var(--third-color);
-  /* position: relative;
-  left: 0px;
-  height: 4px;
-  width: 110px;
-background-color: var(--third-color); */
-}
-.active-hair {
-  position: relative;
-  left: 115px;
-  height: 4px;
-  width: 110px;
-background-color: var(--third-color);
+  
 }
 `

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Button from '../../components/Button'
 import Caption from '../../components/Caption'
 import Paragraph from '../../components/Paragraph'
@@ -15,7 +16,8 @@ const CardTeamPage = ({id, srcImg, name, description }) => {
       <ContentText>
         <Caption textCaption={name}/>
         <Paragraph textParagraph={description}/>
-        <Button textButton='Agendar horário'/>
+        <Link to='/services'><Button textButton='Agendar horário'/></Link>
+        
       </ContentText>
     </ContainerTeamPage>
   )

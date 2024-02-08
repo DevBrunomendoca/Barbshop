@@ -52,23 +52,21 @@ export default function Pricing() {
         <SecondCaption textSecondCaption="Nossa tabela de serviços" />
         <Paragraph textParagraph="Explore a excelência em cuidados masculinos com nossos serviços especializados. Na Barbearia Navalha Pub, garantimos cortes de cabelo modernos e tradicionais para atender ao seu estilo único. Confira todos os nossos preços abaixo:" />
         <Link to='/services'> <Button textButton="Conferir mais" /></Link>
-        
-        
       </ContentText>
       <ContentTable id="content-table-one">
         <CardTable>
           <tr><th>Serviço</th><th>Preço (R$)</th></tr>
-          <tr><td>Corte Tradicional</td><td>R$ 30</td></tr>
-          <tr><td>Corte + Barba</td><td>R$ 60</td></tr>
-          <tr><td>Barba</td><td>R$ 20</td></tr>
-          <tr><td>Corte Infantil (até 12 anos)</td><td>R$ 25</td></tr>
+          <tr><td>CORTE CABELO</td><td>R$ 60</td></tr>
+          <tr><td>CORTE CABELO + BARBA</td><td>R$ 90</td></tr>
+          <tr><td>BARBA EXECUTIVA</td><td>R$ 30</td></tr>
+          <tr><td>CORTE INFANTIL (até 12 anos)</td><td>R$ 25</td></tr>
         </CardTable>
         <CardTable id="content-table-two">
           <tr><th>Serviço</th><th>Preço (R$)</th></tr>
-          <tr><td>Coloração de Barba</td><td>R$ 20</td></tr>
-          <tr><td>Hidratação Capilar</td><td>R$ 40</td></tr>
-          <tr><td>Coloração de Cabelo</td><td>R$  60</td></tr>
-          <tr><td>Design de Sobrancelhas</td><td>R$ 20</td></tr>
+          <tr><td>DEFINITIVA</td><td>R$ 90</td></tr>
+          <tr><td>HIDRATAÇÃO CAPILAR</td><td>R$ 40</td></tr>
+          <tr><td>CORTE + LUZES</td><td>R$  120</td></tr>
+          <tr><td>SOBRANCELHA NA NAVALHA</td><td>R$ 20</td></tr>
         </CardTable>
       </ContentTable>
     </ContainerPricing>

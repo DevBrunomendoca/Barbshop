@@ -65,10 +65,10 @@ export default function SectionTeam() {
       <Caption id='caption-team' textCaption="Nosso time"/>
       <SecondCaption id='second-caption-team' textSecondCaption="Nossa equipe de profissionais" />
       <ContainerCardTeam>
-        <CardTeam id='card-one' src='/foto-barbeiro-perfil1.jpg' name="Lucas Teodoro"/>
-        <CardTeam id='card-two' src='/foto-barbeiro-perfil2.jpg'  name="Matheus Carvalho"/>
-        <CardTeam id='card-three' src='/foto-barbeiro-perfil3.jpg'  name="Pedro Henrique"/>
-        <CardTeam id='card-four' src='/foto-barbeiro-perfil4.jpg'  name="Daniel Vieira"/>
+        <CardTeam id='card-one' src='/foto-barbeiro-perfil1.jpg' name="Lucas Teodoro" alt='Foto de perfil Lucas Teodoro'/>
+        <CardTeam id='card-two' src='/foto-barbeiro-perfil2.jpg'  name="Matheus Carvalho" alt='Foto de perfil Matheus Carvalho'/>
+        <CardTeam id='card-three' src='/foto-barbeiro-perfil3.jpg'  name="Pedro Henrique" alt='Foto de perfil Pedro Henrique'/>
+        <CardTeam id='card-four' src='/foto-barbeiro-perfil4.jpg'  name="Daniel Vieira" alt='Foto de perfil Daniel Vieira'/>
       </ContainerCardTeam>
     </ContainerTeam>
   )

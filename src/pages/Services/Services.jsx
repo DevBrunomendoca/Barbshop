@@ -7,7 +7,7 @@ const Services = () => {
   const { pathname } = useLocation()
 
   const onTop = () => {
-    pathname === "/services" || "/services/hair" || "/services/bear" || "/services/finishes"
+    pathname !== "/services" || "/services/hair" || "/services/bear" || "/services/finishes"
     ? window.scrollTo(400, 400)
     : window.scrollTo(400, 400)
   }
@@ -26,19 +26,19 @@ const Services = () => {
             <ul>
               
                 <Link to="/services"
-                  className={`${pathname === "/services" ? "active-combo" : ""}`}>Combos
+                  className={`${pathname === "/services" ? "active-border" : ""}`}>Combos
                 </Link>
 
                 <Link to="/services/hair"
-                  className={`${pathname === "/services/hair" ? "active-combo" : ""}`}>Cabelo
+                  className={`${pathname === "/services/hair" ? "active-border" : ""}`}>Cabelo
                 </Link>
 
                 <Link to="/services/bear"
-                  className={`${pathname === "/services/bear" ? "active-combo" : ""}`}>Barba
+                  className={`${pathname === "/services/bear" ? "active-border" : ""}`}>Barba
                 </Link>
 
                 <Link to="/services/finishes" 
-                  className={`${pathname === "/services/finishes" ? "active-combo" : ""}`}>Acabamentos
+                  className={`${pathname === "/services/finishes" ? "active-border" : ""}`}>Acabamentos
                 </Link>
 
                 {/* <Link to='/services/'>Combos</Link>
