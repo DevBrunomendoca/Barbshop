@@ -22,7 +22,7 @@ export function About() {
       })
         .fromTo("#content-banner", {
           opacity: 0,
-          y: 140
+          y: 200
         }, {
           opacity: 1,
           y: 0,
@@ -30,7 +30,7 @@ export function About() {
         })
         .fromTo("#content-text", {
           opacity: 0,
-          y: 140
+          y: 200
         }, {
           opacity: 1,
           y: 0,

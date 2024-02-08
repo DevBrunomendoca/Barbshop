@@ -3,7 +3,37 @@ import Title from '../../components/Title'
 import { ContainerServices, ContentServices, ContentScheduling, ContentTable, NavigationTable, ServicesOptions, ContentBannerServices, BorderBottom } from './ServicesStyle'
 import { useEffect } from 'react'
 
+import { gsap } from 'gsap'
+import { useLayoutEffect, useRef } from 'react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 const Services = () => {
+  const tl = useRef(null)
+  const el = useRef(null)
+  useLayoutEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.context(() => {
+      tl.current = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#container-services",
+          start: "top bottom"
+        }
+      })
+        .fromTo("#content-table", {
+          opacity: 0,
+          y: 200
+        }, {
+          opacity: 1,
+          y: 0,
+          duration: 1.3
+        })
+    })
+    return () => {
+      gsap.killTweensOf("#container-services")
+    }
+  }, [])
+
   const { pathname } = useLocation()
 
   const onTop = () => {
@@ -19,9 +49,9 @@ const Services = () => {
     <ContainerServices>
       <ContentBannerServices>
       </ContentBannerServices>
-      <ContentServices>
+      <ContentServices id='container-services' ref={el}>
         <Title textTitle='Conheça nossos serviços' />
-        <ContentTable>
+        <ContentTable id='content-table'>
           <NavigationTable>
             <ul>
               
