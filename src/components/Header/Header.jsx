@@ -4,6 +4,7 @@ import Logo from "../Logo";
 import { useEffect, useState } from "react";
 import IconSideBar from "./IconSideBar";
 import SideBar from "./SideBar";
+import GoToTop from "../GoToTop";
 
 
 export function Header() {
@@ -32,19 +33,20 @@ export function Header() {
         <Logo />
         <ContentListItemHeader>
           <Link to="/"
-            className={`tab ${pathname === "/" ? "active" : ""}`}>Inicio</Link>
+            className={` ${pathname === "/" ? "active" : ""}`}>Inicio</Link>
           <Link to="/about"
-            className={`tab ${pathname === "/about" ? "active" : ""}`} >Sobre</Link>
+            className={` ${pathname === "/about" ? "active" : ""}`} >Sobre</Link>
           <Link to="/team"
             className={`tab ${pathname === "/team" ? "active" : ""}`} >Equipe</Link>
           <Link to="/services"
-            className={`tab ${pathname === "/services"  ? "active" : ""}`} >Serviços</Link>
+            className={` ${pathname ===  "/services" ? "active" : ""}`} >Serviços</Link>
           <Link to="/contacts"
-            className={`tab ${pathname === "/contacts" ? "active" : ""}`} >Contato</Link>
+            className={` ${pathname === "/contacts" ? "active" : ""}`} >Contato</Link>
         </ContentListItemHeader>
         <IconSideBar sideBar={sideBar} onclick={() => toggleSideBar()}/>
       </Navigation>
       {SideBar && <SideBar sideBar={sideBar} setSideBar={setSideBar}/>}
+      <GoToTop />
     </ContainerHeader>
   )
 }

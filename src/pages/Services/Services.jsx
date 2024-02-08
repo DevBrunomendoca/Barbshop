@@ -1,9 +1,19 @@
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import Title from '../../components/Title'
 import { ContainerServices, ContentServices, ContentScheduling, ContentTable, NavigationTable, ServicesOptions, ContentBannerServices, BorderBottom } from './ServicesStyle'
+import { useEffect } from 'react'
 
 const Services = () => {
   const { pathname } = useLocation()
+
+  const onTop = () => {
+    pathname === "/services" || "/services/hair" || "/services/bear" || "/services/finishes"
+    ? window.scrollTo(400, 400)
+    : window.scrollTo(400, 400)
+  }
+  useEffect(() => {
+    onTop()
+  }, [pathname]);
 
   return (
     <ContainerServices>
@@ -27,7 +37,7 @@ const Services = () => {
                   className={`${pathname === "/services/bear" ? "active-combo" : ""}`}>Barba
                 </Link>
 
-                <Link to="/services/finishes"
+                <Link to="/services/finishes" 
                   className={`${pathname === "/services/finishes" ? "active-combo" : ""}`}>Acabamentos
                 </Link>
 

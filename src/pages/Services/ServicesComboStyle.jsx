@@ -23,6 +23,10 @@ export const ContainerAllServices = styled.section`
   li>div>p {
     margin-top: .5rem;
     max-width: 600px;
+    min-width: 600px;
+    @media (max-width:800px){
+      min-width: 0;
+    }
     
   }
 span {

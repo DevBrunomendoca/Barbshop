@@ -8,6 +8,7 @@ import { gsap } from 'gsap'
 import { useLayoutEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Link } from "react-router-dom";
+import GoToTop from "../GoToTop";
 
 export default function SectionAbout() {
   
@@ -58,6 +59,7 @@ Há uma década, a Barbearia Navalha Pub surgiu como uma visão concreta de eleg
           <Paragraph textParagraph="Proprietário e fundador da Barbearia Navalha Pub desde 2014." />
         </ContentCardAbout>
       </ContentImg>
+      <GoToTop />
     </ContainerAbout>
   )
 }
