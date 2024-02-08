@@ -6,6 +6,7 @@ import { ContainerAboutPage, ContentBanner, ContentAbout, ContentAboutText, Cont
 import { gsap } from 'gsap'
 import { useLayoutEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Link } from 'react-router-dom'
 
 export function About() {
   const tl = useRef(null)
@@ -74,7 +75,7 @@ export function About() {
             <Paragraph textParagraph='Av. Mutirão, 1240
             Setor Marista'/>
             <a href="#">AGENDAMENTO WHATSAPP </a>
-            <a href="#">NOSSA LOCALIZAÇÃO</a>
+            <Link to='/contacts'>NOSSA LOCALIZAÇÃO</Link>
           </UnitText>
         </ContentAboutUnit>
       </ContentAbout>

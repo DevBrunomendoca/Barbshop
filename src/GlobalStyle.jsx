@@ -5,6 +5,9 @@ export const GlobalStyle =  createGlobalStyle`
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
 }
 :root {
   --primary-color: #5A6A8C; //#5A6A8C

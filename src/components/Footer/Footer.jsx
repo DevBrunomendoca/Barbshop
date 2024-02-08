@@ -1,21 +1,24 @@
 import Logo from '../Logo'
 import Paragraph from '../Paragraph'
 import SecondCaption from '../SecondCaption'
-import { ContainerFooter, ContentFooterContact, ContenLocation,  ContentEmail, Form, Navalha,ContentCopyright } from './FooterStyle'
+import { ContainerFooter, ContentFooterContact, ContenLocation, ContentEmail, Form, Navalha, ContentCopyright } from './FooterStyle'
 import Button from '../Button'
 import ListItem from '../ListItem'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
-  
+
   return (
     <ContainerFooter>
-        <Navalha src="/image-navalha.png" alt="" />
+      <Navalha src="/image-navalha.png" alt="" />
       <ContentFooterContact  >
         <ContenLocation >
           <div>
-            <img src="/icone-localizacao.png" alt="" />
-            <SecondCaption textSecondCaption='Localização' />
+            <Link to='/contacts'>
+              <img src="/icone-localizacao.png" alt="" />
+              <SecondCaption textSecondCaption='Localização' />
+            </Link>
           </div>
           <Paragraph textParagraph='Av. Mutirão, 1240 Setor Marista' />
           <Paragraph textParagraph='Goiânia-GO 74465-011' />
@@ -26,8 +29,8 @@ const Footer = () => {
           <SecondCaption textSecondCaption='Nos envie seu E-mail' />
           <Paragraph textParagraph='Inscreva-se para receber todas as nossas novidades!' />
           <Form>
-            <input type="text" placeholder='Digite seu E-mail'/>
-            <Button textButton="Enviar!"/>
+            <input type="text" placeholder='Digite seu E-mail' />
+            <Button textButton="Enviar!" />
           </Form>
         </ContentEmail>
         <ListItem />

@@ -44,7 +44,7 @@ flex-direction: column;
 align-items: start;
 gap: .3rem;
 z-index: 10;
-div{ 
+div>a{ 
   display: flex;
   align-items: end; 
   cursor: pointer;
