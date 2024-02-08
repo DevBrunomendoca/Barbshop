@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { About } from "./src/pages/About/About";
 import RootLayout from "./src/pages/RootLayout/RootLayout";
 import Team from "./src/pages/Team/Team";
-import Gallery from "./src/pages/Gallery/Gallery";
+
 import Contact from "./src/pages/Contacts/Contacts";
 
 import { Home } from "./src/pages/Home/Home";
@@ -53,10 +53,6 @@ const router = createBrowserRouter([
           element: <ServiceFinishes />
         }
       ]
-    },
-    {
-      path: "gallery",
-      element: <Gallery />
     },
     {
       path: "contacts",

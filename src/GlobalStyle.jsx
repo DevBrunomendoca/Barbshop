@@ -7,9 +7,9 @@ export const GlobalStyle =  createGlobalStyle`
   box-sizing: border-box;
 }
 :root {
-  --primary-color: #5A6A8C;
-  --second-color: #242524;
-  --third-color: #FFFFFF;
+  --primary-color: #5A6A8C; //#5A6A8C
+  --second-color: #242524; //#DAA521
+  --third-color: #FFFFFF; //#FFFFFF
 }
 html {
   font-size: 95%;

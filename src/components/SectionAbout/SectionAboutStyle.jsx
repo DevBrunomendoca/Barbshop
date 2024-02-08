@@ -2,8 +2,8 @@ import styled from "styled-components"
 
 export const ContainerAbout = styled.section`
   min-height: 90vh;
-  max-width: 1400px;
-  margin: 0 auto;
+  max-width: 1650px;
+  margin: 0 0 0 auto;
   padding: 4rem 1rem;
   display: flex;
   align-items: center;

@@ -1,7 +1,7 @@
 import { ButtonMain } from "./ButtonStyle"
 
-export default function Button({id, textButton }) {
+export default function Button({onClick, id, textButton }) {
   return(
-    <ButtonMain id={id}>{textButton}</ButtonMain>
+    <ButtonMain onClick={onClick} id={id}>{textButton}</ButtonMain>
   )
 } 
