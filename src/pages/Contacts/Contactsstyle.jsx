@@ -77,6 +77,7 @@ export const ContentLocation = styled.div`
 iframe {
   width: 100%;
   height: 600px;
+  border: 0;
 }
 
 `
