@@ -68,7 +68,9 @@ export default function Contact() {
         </ContainerForm>
       </ContentContact>
       <ContentLocation>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1911.499898370936!2d-49.341536261113255!3d-16.626779375969548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef539fa42fd5b%3A0xbce122078cc3b7c1!2sR.%20Vb%20Cinco%20-%20Jardim%20Vista%20Bela%2C%20Goi%C3%A2nia%20-%20GO%2C%2074474-204!5e0!3m2!1spt-BR!2sbr!4v1707420631326!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1910.7648505831462!2d-49.26902008805473!3d-16.700401605005517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef13eb856889f%3A0xbc83b0210d88a343!2sAv.%20Mutir%C3%A3o%2C%202782%20-%20St.%20Bueno%2C%20Goi%C3%A2nia%20-%20GO%2C%2074215-240!5e0!3m2!1spt-BR!2sbr!4v1707423403308!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1911.499898370936!2d-49.341536261113255!3d-16.626779375969548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef539fa42fd5b%3A0xbce122078cc3b7c1!2sR.%20Vb%20Cinco%20-%20Jardim%20Vista%20Bela%2C%20Goi%C3%A2nia%20-%20GO%2C%2074474-204!5e0!3m2!1spt-BR!2sbr!4v1707420631326!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
       </ContentLocation>
     </ContainerContactsPage>
   )
