@@ -20,7 +20,7 @@ const Footer = () => {
               <SecondCaption textSecondCaption='Localização' />
             </Link>
           </div>
-          <Paragraph textParagraph='Av. Mutirão, 2782 - St. Bueno' />
+          <Paragraph textParagraph='Av. Contorno - Jardim das Hortensias' />
           <Paragraph textParagraph='Goiânia-GO 74465-011' />
           <Paragraph textParagraph='(62) 98376-6284' />
           <Logo />
