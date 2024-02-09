@@ -69,11 +69,10 @@ export function About() {
             <img src="/banner-principal.jpg" alt="" />
           </UnitBanner>
           <UnitText id='content-card'>
-            <SecondCaption textSecondCaption='Marista' />
+            <SecondCaption textSecondCaption='Jardim das Hortensias' />
             <Paragraph textParagraph='Localizada em um dos bairros mais tradicionais de Goiânia' />
             <Paragraph textParagraph='Convidamos você a fazer parte desta jornada, onde a excelência é uma tradição, e cada cliente é uma parte vital da nossa história de sucesso.' />
-            <Paragraph textParagraph='Av. Mutirão, 1240
-            Setor Marista'/>
+            <Paragraph textParagraph='Av. Contorno - Jardim das Hortensias'/>
             <a href="#">AGENDAMENTO WHATSAPP </a>
             <Link to='/contacts'>NOSSA LOCALIZAÇÃO</Link>
           </UnitText>

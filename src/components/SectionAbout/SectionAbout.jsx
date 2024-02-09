@@ -46,14 +46,12 @@ export default function SectionAbout() {
 Há uma década, a Barbearia Navalha Pub surgiu como uma visão concreta de elegância e maestria no mundo dos cortes masculinos. " />
         <Paragraph  textParagraph="Inspirados pela tradição e determinados a criar um espaço onde os clientes pudessem experimentar mais do que um simples corte de cabelo." />
         <Link to='/about'>  <Button  textButton="Saiba mais" /></Link>
-       
+      
       </ContentText>
 
       <ContentImg id='content-img'>
         <img src="imagem-sobre2.jpg" alt="" />
 
-        {/*<img src="imagem-cortes4.jpg" alt="" />
-         <ImageComponent imageId="4"/> */}
         <ContentCardAbout >
           <Paragraph textParagraph="Lucas Teodoro" />
           <Paragraph textParagraph="Proprietário e fundador da Barbearia Navalha Pub desde 2014." />
