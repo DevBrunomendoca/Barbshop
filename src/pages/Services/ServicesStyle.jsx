@@ -42,7 +42,6 @@ export const NavigationTable = styled.nav`
   width: 100%;
   background-color: var(--primary-color);
   padding: 2rem 2.5rem;
-  /* /overflow-x: scroll; */
   ul>li:first-child {
     border-bottom: solid 3px var(--third-color);
   }
@@ -64,7 +63,7 @@ ul::-webkit-scrollbar {
   display: none;
 }
   li {
-    list-style-type: none;
+    //list-style-type: none;
     padding-bottom: .5rem;
     
 }
@@ -78,29 +77,35 @@ ul::-webkit-scrollbar {
   }
   
 `
-export const BorderBottom = styled.div`
-position: relative;
-width: 110px;
-//width: 95px;
-//width: 165px;
-height: 4px;
-background-color: var(--third-color);
-left: 0;
-//left: 115px;
-//left: 230px;
-//left: 335px;
-
-`
-
-
 export const ServicesOptions = styled.div`
 
   width: 100%;
-  min-height: 60vh;
+  //min-height: 60vh;
 `
 
 
 
 export const ContentScheduling = styled.div`
+max-width: 1400px;
+margin: 0 auto;
 
+`
+
+export const ContainerScheduling = styled.div`
+  height: 1000px;
+  width: 100%;
+  background-color: var(--primary-color);
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1rem 2rem;
+
+  h3{
+    font-size: 2.2rem;
+  }
+  p{
+    width: 100%;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+    padding-bottom: 1rem;
+  }
 `

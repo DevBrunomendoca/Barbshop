@@ -1,13 +1,22 @@
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import Title from '../../components/Title'
-import { ContainerServices, ContentServices, ContentScheduling, ContentTable, NavigationTable, ServicesOptions, ContentBannerServices, BorderBottom } from './ServicesStyle'
-import { useEffect } from 'react'
+import { ContainerServices, ContentServices, ContentScheduling, ContentTable, NavigationTable, ServicesOptions, ContentBannerServices,  ContainerScheduling } from './ServicesStyle'
+import { useEffect, useState } from 'react'
 
 import { gsap } from 'gsap'
 import { useLayoutEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Header } from '../../components/Header/Header'
+import UserContext from '../contexts/UseContext'
+import Caption from '../../components/Caption'
+import { ParagraphStyled } from '../../components/ParagraphStyle'
+import { CaptionStyled } from '../../components/CaptionStyle'
 
 const Services = () => {
+  const [titleServices, setTitleServices] = useState(null)
+  const [descriptionService, setDescriptionService] = useState(null)
+  const [priceService, setPriceService] = useState(null)
+
   const tl = useRef(null)
   const el = useRef(null)
   useLayoutEffect(() => {
@@ -37,7 +46,11 @@ const Services = () => {
   const { pathname } = useLocation()
 
   const onTop = () => {
-    pathname !== "/services" || "/services/hair" || "/services/bear" || "/services/finishes"
+    pathname !== 
+      "/services" || 
+      "/services/hair" || 
+      "/services/bear" || 
+      "/services/finishes"
     ? window.scrollTo(400, 400)
     : window.scrollTo(400, 400)
   }
@@ -45,8 +58,9 @@ const Services = () => {
     onTop()
   }, [pathname]);
 
-  return (
-    <ContainerServices>
+  return ( 
+    <UserContext.Provider value={{setTitleServices, setDescriptionService, setPriceService}}>
+    <ContainerServices >
       <ContentBannerServices>
       </ContentBannerServices>
       <ContentServices id='container-services' ref={el}>
@@ -69,24 +83,22 @@ const Services = () => {
 
                 <Link to="/services/finishes" 
                   className={`${pathname === "/services/finishes" ? "active-border" : ""}`}>Acabamentos
-                </Link>
-
-                {/* <Link to='/services/'>Combos</Link>
-                <Link to='/services/hair'>Cabelo</Link> 
-                
-                <Link to='/services/finishes'>Acabamentos</Link> */}
-            
+                </Link>  
             </ul>
           </NavigationTable>
-          <ServicesOptions>
+          <ServicesOptions >
             <Outlet />
           </ServicesOptions>
         </ContentTable>
       </ContentServices>
-
-
-      <ContentScheduling></ContentScheduling>
+      <ContentScheduling>
+        <ContainerScheduling>
+          <CaptionStyled>{titleServices}</CaptionStyled>
+          <ParagraphStyled>{descriptionService}</ParagraphStyled>
+        </ContainerScheduling>
+      </ContentScheduling>
     </ContainerServices>
+    </UserContext.Provider>
   )
 }
 

@@ -1,9 +1,13 @@
+import { useContext } from 'react'
 import Button from '../../../components/Button'
 import Caption from '../../../components/Caption'
 import Paragraph from '../../../components/Paragraph'
 import { ContainerAllServices } from '../ServicesComboStyle'
+import UserContext from '../../contexts/UseContext'
 
 const ServicesCombo = () => {
+
+  const { setTitleServices, setDescriptionService, setPriceService } = useContext(UserContext);
 
   const data = [
     {id: '1', title:'CORTE CABELO + BARBA', description: 'O combo perfeito para o homem moderno: corte de cabelo e barba.', price:'R$ 90' },
@@ -16,6 +20,13 @@ const ServicesCombo = () => {
     
     {id: '5', title:'CORTE + BARBA + DEFINITIVA', description: 'O combo completo para o homem que busca um visual impecável.', price:'R$ 90' }
   ]
+
+  const getTitle = (id) => {
+    const userId = data.filter(item => item.id === id) 
+    setTitleServices(userId[0].title)
+    setDescriptionService(userId[0].description)
+    setPriceService(userId[0].price)
+  }
   return(
     <ContainerAllServices>
       {data.map((item) =>(
@@ -29,7 +40,7 @@ const ServicesCombo = () => {
             <span>{item.price}</span>
           </div>
           <div>
-            <Button textButton='Agendar'/>
+            <Button onClick={() => getTitle(item.id)} id={data.id} textButton='Agendar'/>
           </div>
         </li>
       </ul>

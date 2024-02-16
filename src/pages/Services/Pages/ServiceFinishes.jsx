@@ -5,11 +5,11 @@ import { ContainerAllServices } from "../ServicesComboStyle"
 
 const ServiceFinishes = () => {
   const data = [
-    {id: '1', title:'SOBRANCELHA NA NAVALHA', description: 'Deixe suas sombrancelhas alinhadas.', price:'R$ 20' },
+    {id: '14', title:'SOBRANCELHA NA NAVALHA', description: 'Deixe suas sombrancelhas alinhadas.', price:'R$ 20' },
     
-    {id: '2', title:'PEZINHO', description: 'Para dar aquela retocada no seu pezinho!', price:'R$ 15' },
+    {id: '15', title:'PEZINHO', description: 'Para dar aquela retocada no seu pezinho!', price:'R$ 15' },
     
-    {id: '3', title:'DEPILAÇÃO NARIZ COM CERA', description: 'Depilação especializada e com altissima qualidade!', price:'R$ 20' }
+    {id: '16', title:'DEPILAÇÃO NARIZ COM CERA', description: 'Depilação especializada e com altissima qualidade!', price:'R$ 20' }
   ]
 
   return (

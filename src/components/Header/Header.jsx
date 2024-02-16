@@ -37,9 +37,15 @@ export function Header() {
           <Link to="/about"
             className={` ${pathname === "/about" ? "active" : ""}`} >Sobre</Link>
           <Link to="/team"
-            className={`tab ${pathname === "/team" ? "active" : ""}`} >Equipe</Link>
+            className={` ${pathname === "/team" ? "active" : ""}`} >Equipe</Link>
           <Link to="/services"
-            className={` ${pathname ===  "/services" ? "active" : ""}`} >Serviços</Link>
+            className={` ${pathname ===  
+              "/services" 
+              
+              ? "active" 
+              : ""}`
+            } 
+          >Serviços</Link>
           <Link to="/contacts"
             className={` ${pathname === "/contacts" ? "active" : ""}`} >Contato</Link>
         </ContentListItemHeader>
