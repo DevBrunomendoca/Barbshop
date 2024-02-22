@@ -1,5 +1,3 @@
-// DateTimePicker.styles.js
-
 import styled from 'styled-components';
 
 export const StyledDateTimePicker = styled.div`

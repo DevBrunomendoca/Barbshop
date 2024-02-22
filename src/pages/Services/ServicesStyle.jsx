@@ -87,8 +87,13 @@ export const ContainerScheduling = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: start;
+  
 	gap: 1rem;
 	padding: 1rem 2rem;
+  button {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+  }
 `;
 export const ContentDescriptionScheduling = styled.div`
 	display: flex;
@@ -116,6 +121,7 @@ export const ContentSelectBarber = styled.div`
   flex-direction: column;
   align-items: start;
   gap: 2.5rem;
+
 	fieldset {
 		padding: 0.5rem 1rem 1rem;
 	}

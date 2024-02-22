@@ -23,6 +23,7 @@ import Caption from "../../components/Caption";
 import { ParagraphStyled } from "../../components/ParagraphStyle";
 import { CaptionStyled } from "../../components/CaptionStyle";
 import DateTimePicker from "./DateTimePicker";
+import Button from "../../components/Button";
 
 const Services = () => {
 	const [titleServices, setTitleServices] = useState("CORTE CABELO + BARBA");
@@ -147,6 +148,7 @@ const Services = () => {
               </fieldset>
               <DateTimePicker />
             </ContentSelectBarber>
+              <Button textButton="Agendar horário"/>
 					</ContainerScheduling>
 				</ContentScheduling>
 			</ContainerServices>
