@@ -81,7 +81,7 @@ export const ContentScheduling = styled.div`
 `;
 
 export const ContainerScheduling = styled.div`
-	min-height:550px;
+	min-height: 700px;
 	width: 100%;
 	background-color: var(--primary-color);
 	display: flex;
@@ -112,6 +112,10 @@ export const ContentDescriptionScheduling = styled.div`
 `;
 export const ContentSelectBarber = styled.div`
 	width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2.5rem;
 	fieldset {
 		padding: 0.5rem 1rem 1rem;
 	}
